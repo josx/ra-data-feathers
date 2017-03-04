@@ -6,5 +6,8 @@ help:
 install: package.json ## install dependencies
 	@npm install
 
+clean: ## clean lib dir
+	rm -rf lib
+
 build: ## compile ES6 files to JS
 	@NODE_ENV=production ./node_modules/.bin/babel ./src -d lib --ignore '*.spec.js'
