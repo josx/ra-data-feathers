@@ -1,6 +1,8 @@
 import { queryParameters, fetchJson } from 'admin-on-rest/lib/util/fetch';
 
 import {
+    GET_MANY,
+    GET_MANY_REFERENCE,
     GET_LIST,
     GET_ONE,
     CREATE,
@@ -31,9 +33,11 @@ export default (apiUrl, httpClient = fetchJson) => {
         const options = {};
         let query = {};
         switch (type) {
-        case GET_LIST: {
-            const { page, perPage } = params.pagination;
-            const { field, order } = params.sort;
+        case GET_MANY:
+        case GET_MANY_REFERENCE:
+        case GET_LIST:
+            const { page, perPage } = params.pagination || {};
+            const { field, order } = params.sort || {};
 
             let sortKey = '$sort[' + field + ']';
             let sortVal = (order === 'DESC') ? -1 : 1;
@@ -49,7 +53,6 @@ export default (apiUrl, httpClient = fetchJson) => {
 
             url = `${apiUrl}/${resource}?${queryParameters(query)}`;
             break;
-        }
         case GET_ONE:
             url = `${apiUrl}/${resource}/${params.id}`;
             break;
@@ -83,6 +86,9 @@ export default (apiUrl, httpClient = fetchJson) => {
     const convertHTTPResponseToREST = (response, type, resource, params) => {
         const { headers, json } = response;
         switch (type) {
+        case GET_MANY:
+        case GET_MANY_REFERENCE:
+            return json.data;
         case GET_LIST:
             return {
                 data: json.data,
