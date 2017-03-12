@@ -1,6 +1,6 @@
 {
   "name": "aor-feathers-client",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A feathers client for admin-on-rest",
   "main": "lib/index.js",
   "scripts": {
@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/josx/aor-feathers-client#readme",
   "dependencies": {
-    "admin-on-rest": "^0.7.0"
+    "admin-on-rest": "^0.9.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
