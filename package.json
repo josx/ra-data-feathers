@@ -43,6 +43,24 @@
   },
   "contributors": [
     {
+      "name": "José Luis Di Biase",
+      "email": "josx@interorganic.com.ar",
+      "url": "https://github.com/josx",
+      "contributions": 4,
+      "additions": 250,
+      "deletions": 3,
+      "hireable": true
+    },
+    {
+      "name": "Ryan Harmuth",
+      "email": null,
+      "url": "https://github.com/Ryanthegiantlion",
+      "contributions": 1,
+      "additions": 4,
+      "deletions": 0,
+      "hireable": true
+    },
+    {
       "name": "Tomasz Bak",
       "email": null,
       "url": "https://github.com/tb",
@@ -50,15 +68,6 @@
       "additions": 187,
       "deletions": 127,
       "hireable": null
-    },
-    {
-      "name": "José Luis Di Biase",
-      "email": "josx@interorganic.com.ar",
-      "url": "https://github.com/josx",
-      "contributions": 3,
-      "additions": 228,
-      "deletions": 1,
-      "hireable": true
     }
   ]
 }
