@@ -6,7 +6,7 @@ import {
   CREATE,
   UPDATE,
   DELETE,
-} from 'admin-on-rest';
+} from 'admin-on-rest/lib/rest/types';
 
 export default client => {
   const mapRequest = (type, resource, params) => {
