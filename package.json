@@ -32,7 +32,7 @@
     "url": "https://github.com/josx/aor-feathers-client/issues"
   },
   "homepage": "https://github.com/josx/aor-feathers-client#readme",
-  "dependencies": {
+  "peerDependencies": {
     "admin-on-rest": "^1.0.1"
   },
   "devDependencies": {
