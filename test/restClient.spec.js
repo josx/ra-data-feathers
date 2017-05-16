@@ -1,3 +1,5 @@
+"use strict";
+
 const expect = require('chai').expect;
 const sinon = require('sinon');
 const restClient = require('../lib').restClient;
@@ -34,9 +36,8 @@ function setupClient() {
 
 
 describe('Rest Client', function () {
-
+  let asyncResult;
   describe('when called with GET_MANY', function () {
-    let asyncResult;
     let ids = [1, 2, 3];
     beforeEach(function () {
       setupClient();
@@ -69,7 +70,6 @@ describe('Rest Client', function () {
   });
 
   describe('when called with GET_LIST', function () {
-    let asyncResult;
     let params = {
       pagination: {
         page: 10,
