@@ -203,7 +203,7 @@ describe('Rest Client', function () {
 
     it('returns the data returned by the client', function () {
       return asyncResult.then(result => {
-        expect(result).to.deep.equal(removeResult);
+        expect(result).to.deep.equal({ data: removeResult });
       });
     });
   });
