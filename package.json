@@ -34,7 +34,8 @@
   },
   "homepage": "https://github.com/josx/aor-feathers-client#readme",
   "peerDependencies": {
-    "admin-on-rest": "^1.0.1"
+    "admin-on-rest": "^1.0.1",
+    "feathers-client": "^1.9.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
