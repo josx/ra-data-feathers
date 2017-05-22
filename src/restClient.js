@@ -52,6 +52,7 @@ export default client => {
     switch (type) {
       case GET_ONE:
       case UPDATE:
+      case DELETE:
         return { data: response };
       case CREATE:
         return { data: {...params.data, id: response.id} };
