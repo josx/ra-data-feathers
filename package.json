@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "pretest": "npm run build",
-    "test": "mocha",
+    "test": "mocha --opts mocha.opts",
     "build": "make build",
     "clean": "make clean",
     "prepublish": "make build",
