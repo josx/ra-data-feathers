@@ -8,7 +8,7 @@ import {
   DELETE,
 } from 'admin-on-rest/lib/rest/types';
 
-export default client => {
+export default (client, options = { id: 'id' }) => {
   const mapRequest = (type, resource, params) => {
     const service = client.service(resource);
     let query = {};
