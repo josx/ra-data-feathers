@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:7.10
+    working_directory: ~/aor-feathers-client
+    steps:
+      - checkout
+      - restore_cache:
+          key: mdph-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn install
+      - save_cache:
+          key: mdph-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - "/root/.cache/yarn"
+      - run:
+          name: Test
+          command: yarn test
+      - run:
+          name: Build
+          command: yarn build
