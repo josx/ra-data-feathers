@@ -5,10 +5,16 @@
   "main": "lib/index.js",
   "scripts": {
     "pretest": "npm run build",
-    "test": "mocha",
+    "test": "npm run coverage",
     "build": "make build",
     "clean": "make clean",
-    "prepublish": "make build"
+    "prepublish": "make build",
+    "publish": "git push origin --tags && npm run changelog && git push origin",
+    "changelog": "github_changelog_generator && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts"
   },
   "files": [
     "LICENSE",
@@ -34,14 +40,17 @@
   },
   "homepage": "https://github.com/josx/aor-feathers-client#readme",
   "peerDependencies": {
-    "admin-on-rest": "^1.0.1"
+    "admin-on-rest": "^1.0.1",
+    "feathers-client": ">=1.9.0"
   },
   "devDependencies": {
+    "admin-on-rest": "^1.0.1",
     "babel-cli": "^6.18.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-stage-0": "^6.16.0",
     "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
     "mocha": "^3.4.1",
     "sinon": "^2.2.0"
   },
