@@ -8,15 +8,23 @@ import {
   DELETE,
 } from 'admin-on-rest/lib/rest/types';
 
-export default client => {
+export default (client, options = { id: 'id' }) => {
   const mapRequest = (type, resource, params) => {
     const service = client.service(resource);
     let query = {};
 
+    const mapParamsId = params => {
+      if(options.id !== 'id'){
+        params[options.id] = params.id;
+        delete params.id;
+      }
+      return params;
+    };
+
     switch (type) {
       case GET_MANY:
         let ids = params.ids || [];
-        query = {'id': { '$in': ids }};
+        query[options.id] = { '$in': ids };
         query['$limit'] = ids.length;
         return service.find({ query });
       case GET_MANY_REFERENCE:
@@ -24,7 +32,8 @@ export default client => {
         const {page, perPage} = params.pagination || {};
         const {field, order} = params.sort || {};
 
-        let sortKey = '$sort[' + field + ']';
+        const mapField = field => (field === 'id') ? options.id : field;
+        let sortKey = '$sort[' + mapField(field) + ']';
         let sortVal = (order === 'DESC') ? -1 : 1;
         if (perPage && page) {
           query['$limit'] = perPage;
@@ -36,13 +45,13 @@ export default client => {
         Object.assign(query, params.filter);
         return service.find({ query });
       case GET_ONE:
-        return service.get(params.id);
+        return service.get(params[options.id]);
       case UPDATE:
-        return service.update(params.id, params.data);
+        return service.update(mapParamsId(params), params.data);
       case CREATE:
         return service.create(params.data);
       case DELETE:
-        return service.remove(params.id);
+        return service.remove(params[options.id]);
       default:
         throw new Error(`Unsupported FeathersJS restClient action type ${type}`);
     }
@@ -53,9 +62,9 @@ export default client => {
       case GET_ONE:
       case UPDATE:
       case DELETE:
-        return { data: response };
+        return { data: {...response, id: response[options.id]} };
       case CREATE:
-        return { data: {...params.data, id: response.id} };
+        return { data: {...params.data, id: response[options.id]} };
       default:
         return response;
     }
