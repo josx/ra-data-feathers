@@ -1,15 +1,19 @@
 # Change Log
 
-## [Unreleased](https://github.com/josx/aor-feathers-client/tree/HEAD)
-
-[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.3.1...HEAD)
+## [v0.4.0](https://github.com/josx/aor-feathers-client/tree/v0.4.0) (2017-07-13)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.3.1...v0.4.0)
 
 **Closed issues:**
 
-- Use PATCH instead of PUT [\#20](https://github.com/josx/aor-feathers-client/issues/20)
+- Duplicated Presentation when using mongoose [\#25](https://github.com/josx/aor-feathers-client/issues/25)
+- Add circleCI to automate PR testing ? [\#22](https://github.com/josx/aor-feathers-client/issues/22)
+- Custom identifiers/primary keys for in resources [\#16](https://github.com/josx/aor-feathers-client/issues/16)
+- feathers-client in peerDependencies ? [\#15](https://github.com/josx/aor-feathers-client/issues/15)
 
 **Merged pull requests:**
 
+- Custom ids support [\#26](https://github.com/josx/aor-feathers-client/pull/26) ([josx](https://github.com/josx))
+- Add circle ci [\#24](https://github.com/josx/aor-feathers-client/pull/24) ([fonzarely](https://github.com/fonzarely))
 - Add feathers-client as peerDependencies [\#19](https://github.com/josx/aor-feathers-client/pull/19) ([fonzarely](https://github.com/fonzarely))
 - Fix response mapping on delete routes [\#18](https://github.com/josx/aor-feathers-client/pull/18) ([wedneyyuri](https://github.com/wedneyyuri))
 - add some tests for rest client [\#14](https://github.com/josx/aor-feathers-client/pull/14) ([AmrN](https://github.com/AmrN))
