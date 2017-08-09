@@ -2,6 +2,7 @@ import {
   AUTH_LOGIN,
   AUTH_LOGOUT,
   AUTH_CHECK,
+  AUTH_ERROR,
 } from 'admin-on-rest';
 
 export default (client, options = {}) => (type, params) => {
@@ -25,6 +26,13 @@ export default (client, options = {}) => (type, params) => {
       return client.logout();
     case AUTH_CHECK:
       return localStorage.getItem(storageKey) ? Promise.resolve() : Promise.reject();
+    case AUTH_ERROR:
+      const { code } = params;
+      if (code === 401) {
+        localStorage.removeItem(storageKey);
+        return Promise.reject();
+      }
+      return Promise.resolve();
     default:
       throw new Error(`Unsupported FeathersJS authClient action type ${type}`);
   }
