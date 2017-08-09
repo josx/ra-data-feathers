@@ -63,7 +63,12 @@ const authClientOptions = {
   authenticate: { strategy: 'local' },
 };
 
+// to rename id field for *all* resources use this syntax:
 const options = { id: '_id' };
+
+// to rename id field(s) for specific resources use this syntax:
+const options = {'my-resource': {id: '_id'}}
+
 const App = () => (
   <Admin
     authClient={authClient(feathersClient, authClientOptions)}
