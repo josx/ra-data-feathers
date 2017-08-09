@@ -13,6 +13,7 @@ For using [feathers](https://www.feathersjs.com) with [admin-on-rest](https://gi
 * AUTH_LOGIN
 * AUTH_LOGOUT
 * AUTH_CHECK
+* AUTH_ERROR
 * Custom Id support
 
 ## Installation
