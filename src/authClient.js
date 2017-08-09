@@ -27,8 +27,8 @@ export default (client, options = {}) => (type, params) => {
     case AUTH_CHECK:
       return localStorage.getItem(storageKey) ? Promise.resolve() : Promise.reject();
     case AUTH_ERROR:
-      const { status } = params;
-      if (status === 401) {
+      const { code } = params;
+      if (code === 401) {
         localStorage.removeItem(storageKey);
         return Promise.reject();
       }
