@@ -67,21 +67,21 @@
       "hireable": null
     },
     {
-      "name": "Amr Noman",
+      "name": "tony kerz",
       "email": null,
-      "url": "https://github.com/AmrN",
-      "contributions": 2,
-      "additions": 2,
-      "deletions": 2,
+      "url": "https://github.com/tony-kerz",
+      "contributions": 3,
+      "additions": 251,
+      "deletions": 100,
       "hireable": null
     },
     {
-      "name": "Wédney Yuri",
+      "name": "Amr Noman",
       "email": null,
-      "url": "https://github.com/wedneyyuri",
-      "contributions": 1,
-      "additions": 1,
-      "deletions": 1,
+      "url": "https://github.com/AmrN",
+      "contributions": 4,
+      "additions": 239,
+      "deletions": 7,
       "hireable": null
     },
     {
@@ -94,13 +94,40 @@
       "hireable": true
     },
     {
+      "name": "Lijo Antony",
+      "email": null,
+      "url": "https://github.com/lijoantony",
+      "contributions": 2,
+      "additions": 11,
+      "deletions": 2,
+      "hireable": true
+    },
+    {
+      "name": "Wédney Yuri",
+      "email": null,
+      "url": "https://github.com/wedneyyuri",
+      "contributions": 2,
+      "additions": 4,
+      "deletions": 3,
+      "hireable": true
+    },
+    {
       "name": "José Luis Di Biase",
       "email": null,
       "url": "https://github.com/josx",
-      "contributions": 9,
-      "additions": 272,
-      "deletions": 16,
+      "contributions": 21,
+      "additions": 742,
+      "deletions": 124,
       "hireable": true
+    },
+    {
+      "name": "Fabien Champigny",
+      "email": null,
+      "url": "https://github.com/fonzarely",
+      "contributions": 4,
+      "additions": 2409,
+      "deletions": 2,
+      "hireable": null
     }
   ]
 }
