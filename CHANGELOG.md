@@ -1,5 +1,23 @@
 # Change Log
 
+## [v0.5.0](https://github.com/josx/aor-feathers-client/tree/v0.5.0) (2017-08-10)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.4.0...v0.5.0)
+
+**Closed issues:**
+
+- Support AUTH\_ERROR [\#31](https://github.com/josx/aor-feathers-client/issues/31)
+- issues with primary-key/id not named 'id' [\#30](https://github.com/josx/aor-feathers-client/issues/30)
+- Cannot read property 'map' of undefined? [\#29](https://github.com/josx/aor-feathers-client/issues/29)
+- custom ids tests [\#27](https://github.com/josx/aor-feathers-client/issues/27)
+- Deprecated package - react-addons-transition-group [\#23](https://github.com/josx/aor-feathers-client/issues/23)
+- Write package description [\#17](https://github.com/josx/aor-feathers-client/issues/17)
+
+**Merged pull requests:**
+
+- Update contributors [\#34](https://github.com/josx/aor-feathers-client/pull/34) ([josx](https://github.com/josx))
+- support for resource specific id field overrides [\#33](https://github.com/josx/aor-feathers-client/pull/33) ([tony-kerz](https://github.com/tony-kerz))
+- Implements AUTH\_ERROR support [\#32](https://github.com/josx/aor-feathers-client/pull/32) ([lijoantony](https://github.com/lijoantony))
+
 ## [v0.4.0](https://github.com/josx/aor-feathers-client/tree/v0.4.0) (2017-07-13)
 [Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.3.1...v0.4.0)
 
