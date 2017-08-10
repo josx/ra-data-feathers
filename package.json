@@ -14,7 +14,8 @@
     "release:patch": "npm version patch && npm publish",
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish",
-    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts"
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts",
+    "mocha": "env DEBUG=aor-feathers-client:* mocha"
   },
   "files": [
     "LICENSE",
@@ -41,6 +42,7 @@
   "homepage": "https://github.com/josx/aor-feathers-client#readme",
   "peerDependencies": {
     "admin-on-rest": "^1.0.1",
+    "debug": "^3.0.0",
     "feathers-client": ">=1.9.0"
   },
   "devDependencies": {
