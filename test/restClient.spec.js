@@ -18,6 +18,7 @@ const getResult = { id: 1, title: 'gotten' };
 const updateResult = { id: 1, title: 'updated' };
 const createResult = { id: 1, title: 'created' };
 const removeResult = { id: 1, title: 'deleted' };
+const authenticateResult = {};
 
 let aorClient, fakeClient, fakeService;
 
@@ -34,6 +35,7 @@ function setupClient(options = {}) {
 
   fakeClient = {
     service: (resource) => fakeService,
+    authenticate: () => Promise.resolve(authenticateResult)
   };
 
   aorClient = restClient(fakeClient, options);
@@ -341,7 +343,8 @@ describe('Rest Client', function () {
         return aorClient('WRONG_TYPE', 'posts', {})
           .then(result => {
             throw new Error("client must reject");
-          });
+          })
+          .catch(err => {});
       } catch (err) {
         expect(err).to.deep.equal(errorRes);
       }
