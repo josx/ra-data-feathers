@@ -58,30 +58,30 @@
   },
   "contributors": [
     {
-      "name": "Tomasz Bak",
+      "name": "Wédney Yuri",
       "email": null,
-      "url": "https://github.com/tb",
+      "url": "https://github.com/wedneyyuri",
       "contributions": 2,
-      "additions": 187,
-      "deletions": 127,
+      "additions": 4,
+      "deletions": 3,
+      "hireable": true
+    },
+    {
+      "name": "Dream",
+      "email": null,
+      "url": "https://github.com/dreamrace",
+      "contributions": 2,
+      "additions": 2,
+      "deletions": 0,
       "hireable": null
     },
     {
-      "name": "tony kerz",
+      "name": "Igor Berlenko",
       "email": null,
-      "url": "https://github.com/tony-kerz",
-      "contributions": 3,
-      "additions": 251,
-      "deletions": 100,
-      "hireable": null
-    },
-    {
-      "name": "Amr Noman",
-      "email": null,
-      "url": "https://github.com/AmrN",
-      "contributions": 4,
-      "additions": 239,
-      "deletions": 7,
+      "url": "https://github.com/7flash",
+      "contributions": 2,
+      "additions": 4,
+      "deletions": 3,
       "hireable": null
     },
     {
@@ -103,22 +103,22 @@
       "hireable": true
     },
     {
-      "name": "Wédney Yuri",
+      "name": "tony kerz",
       "email": null,
-      "url": "https://github.com/wedneyyuri",
-      "contributions": 2,
-      "additions": 4,
-      "deletions": 3,
-      "hireable": true
+      "url": "https://github.com/tony-kerz",
+      "contributions": 3,
+      "additions": 251,
+      "deletions": 100,
+      "hireable": null
     },
     {
-      "name": "José Luis Di Biase",
+      "name": "Tomasz Bak",
       "email": null,
-      "url": "https://github.com/josx",
-      "contributions": 21,
-      "additions": 742,
-      "deletions": 124,
-      "hireable": true
+      "url": "https://github.com/tb",
+      "contributions": 2,
+      "additions": 187,
+      "deletions": 127,
+      "hireable": null
     },
     {
       "name": "Fabien Champigny",
@@ -128,6 +128,24 @@
       "additions": 2409,
       "deletions": 2,
       "hireable": null
+    },
+    {
+      "name": "Amr Noman",
+      "email": null,
+      "url": "https://github.com/AmrN",
+      "contributions": 4,
+      "additions": 239,
+      "deletions": 7,
+      "hireable": null
+    },
+    {
+      "name": "José Luis Di Biase",
+      "email": null,
+      "url": "https://github.com/josx",
+      "contributions": 27,
+      "additions": 840,
+      "deletions": 152,
+      "hireable": true
     }
   ]
 }
