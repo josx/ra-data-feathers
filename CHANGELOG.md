@@ -1,5 +1,18 @@
 # Change Log
 
+## [v0.6.0](https://github.com/josx/aor-feathers-client/tree/v0.6.0) (2017-09-01)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.5.0...v0.6.0)
+
+**Closed issues:**
+
+- GET\_MANY does not return with id in mapResponse [\#37](https://github.com/josx/aor-feathers-client/issues/37)
+- Authorization header missing from requests [\#35](https://github.com/josx/aor-feathers-client/issues/35)
+
+**Merged pull requests:**
+
+- Fix mapresponse missing id handling [\#38](https://github.com/josx/aor-feathers-client/pull/38) ([dreamrace](https://github.com/dreamrace))
+- Call authenticate method on refresh page [\#36](https://github.com/josx/aor-feathers-client/pull/36) ([7flash](https://github.com/7flash))
+
 ## [v0.5.0](https://github.com/josx/aor-feathers-client/tree/v0.5.0) (2017-08-10)
 [Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.4.0...v0.5.0)
 
