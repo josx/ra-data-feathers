@@ -77,6 +77,55 @@ describe('Rest Client', function () {
     });
   });
 
+  describe.only('when called with GET_MANY_REFERENCE', function () {
+    let params = {
+      pagination: {
+        page: 10,
+        perPage: 20,
+      },
+      sort: {
+        field: 'id',
+        order: 'DESC'
+      },
+      filter: {
+        name: 'john'
+      },
+      id: '1',
+      target: '_userId'
+    };
+    beforeEach(function () {
+      setupClient();
+      asyncResult = aorClient(types.GET_MANY_REFERENCE, 'posts', params);
+    });
+
+    it("calls the client's find method", function () {
+      return asyncResult.then(result => {
+        expect(fakeService.find.calledOnce).to.be.true;
+      });
+    });
+
+    it('returns the data returned by the client', function () {
+      return asyncResult.then(result => {
+        expect(result).to.deep.equal(findResult);
+      });
+    });
+
+    it('formats params into a query and pass it to client', function () {
+      const query = {
+        $limit: 20,
+        $skip: 20 * 9,
+        '$sort[id]': '-1',
+        name: 'john',
+        _userId: '1'
+      };
+      return asyncResult.then(result => {
+        expect(fakeService.find.calledWith({
+          query,
+        })).to.be.true;
+      });
+    });
+  });
+
   describe('when called with GET_LIST', function () {
     let params = {
       pagination: {

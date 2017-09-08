@@ -29,6 +29,9 @@ export default (client, options = {}) => {
         query['$limit'] = ids.length
         return service.find({query})
       case GET_MANY_REFERENCE:
+        if(params.target && params.id){
+          query[params.target] = params.id
+        }
       case GET_LIST:
         const {page, perPage} = params.pagination || {}
         const {field, order} = params.sort || {}
