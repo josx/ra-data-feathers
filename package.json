@@ -1,6 +1,6 @@
 {
   "name": "aor-feathers-client",
-  "version": "0.3.1",
+  "version": "0.6.0",
   "description": "A feathers client for admin-on-rest",
   "main": "lib/index.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "release:patch": "npm version patch && npm publish",
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish",
-    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts"
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts",
+    "mocha": "env DEBUG=aor-feathers-client:* mocha"
   },
   "files": [
     "LICENSE",
@@ -41,6 +42,7 @@
   "homepage": "https://github.com/josx/aor-feathers-client#readme",
   "peerDependencies": {
     "admin-on-rest": "^1.0.1",
+    "debug": "^3.0.0",
     "feathers-client": ">=1.9.0"
   },
   "devDependencies": {
@@ -56,30 +58,30 @@
   },
   "contributors": [
     {
-      "name": "Tomasz Bak",
-      "email": null,
-      "url": "https://github.com/tb",
-      "contributions": 2,
-      "additions": 187,
-      "deletions": 127,
-      "hireable": null
-    },
-    {
-      "name": "Amr Noman",
-      "email": null,
-      "url": "https://github.com/AmrN",
-      "contributions": 2,
-      "additions": 2,
-      "deletions": 2,
-      "hireable": null
-    },
-    {
       "name": "Wédney Yuri",
       "email": null,
       "url": "https://github.com/wedneyyuri",
-      "contributions": 1,
-      "additions": 1,
-      "deletions": 1,
+      "contributions": 2,
+      "additions": 4,
+      "deletions": 3,
+      "hireable": true
+    },
+    {
+      "name": "Dream",
+      "email": null,
+      "url": "https://github.com/dreamrace",
+      "contributions": 2,
+      "additions": 2,
+      "deletions": 0,
+      "hireable": null
+    },
+    {
+      "name": "Igor Berlenko",
+      "email": null,
+      "url": "https://github.com/7flash",
+      "contributions": 2,
+      "additions": 4,
+      "deletions": 3,
       "hireable": null
     },
     {
@@ -92,12 +94,57 @@
       "hireable": true
     },
     {
+      "name": "Lijo Antony",
+      "email": null,
+      "url": "https://github.com/lijoantony",
+      "contributions": 2,
+      "additions": 11,
+      "deletions": 2,
+      "hireable": true
+    },
+    {
+      "name": "tony kerz",
+      "email": null,
+      "url": "https://github.com/tony-kerz",
+      "contributions": 3,
+      "additions": 251,
+      "deletions": 100,
+      "hireable": null
+    },
+    {
+      "name": "Tomasz Bak",
+      "email": null,
+      "url": "https://github.com/tb",
+      "contributions": 2,
+      "additions": 187,
+      "deletions": 127,
+      "hireable": null
+    },
+    {
+      "name": "Fabien Champigny",
+      "email": null,
+      "url": "https://github.com/fonzarely",
+      "contributions": 4,
+      "additions": 2409,
+      "deletions": 2,
+      "hireable": null
+    },
+    {
+      "name": "Amr Noman",
+      "email": null,
+      "url": "https://github.com/AmrN",
+      "contributions": 4,
+      "additions": 239,
+      "deletions": 7,
+      "hireable": null
+    },
+    {
       "name": "José Luis Di Biase",
       "email": null,
       "url": "https://github.com/josx",
-      "contributions": 9,
-      "additions": 272,
-      "deletions": 16,
+      "contributions": 27,
+      "additions": 840,
+      "deletions": 152,
       "hireable": true
     }
   ]

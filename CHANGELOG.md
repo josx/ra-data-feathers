@@ -1,15 +1,50 @@
 # Change Log
 
-## [Unreleased](https://github.com/josx/aor-feathers-client/tree/HEAD)
-
-[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.3.1...HEAD)
+## [v0.6.0](https://github.com/josx/aor-feathers-client/tree/v0.6.0) (2017-09-01)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.5.0...v0.6.0)
 
 **Closed issues:**
 
-- Use PATCH instead of PUT [\#20](https://github.com/josx/aor-feathers-client/issues/20)
+- GET\_MANY does not return with id in mapResponse [\#37](https://github.com/josx/aor-feathers-client/issues/37)
+- Authorization header missing from requests [\#35](https://github.com/josx/aor-feathers-client/issues/35)
 
 **Merged pull requests:**
 
+- Fix mapresponse missing id handling [\#38](https://github.com/josx/aor-feathers-client/pull/38) ([dreamrace](https://github.com/dreamrace))
+- Call authenticate method on refresh page [\#36](https://github.com/josx/aor-feathers-client/pull/36) ([7flash](https://github.com/7flash))
+
+## [v0.5.0](https://github.com/josx/aor-feathers-client/tree/v0.5.0) (2017-08-10)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.4.0...v0.5.0)
+
+**Closed issues:**
+
+- Support AUTH\_ERROR [\#31](https://github.com/josx/aor-feathers-client/issues/31)
+- issues with primary-key/id not named 'id' [\#30](https://github.com/josx/aor-feathers-client/issues/30)
+- Cannot read property 'map' of undefined? [\#29](https://github.com/josx/aor-feathers-client/issues/29)
+- custom ids tests [\#27](https://github.com/josx/aor-feathers-client/issues/27)
+- Deprecated package - react-addons-transition-group [\#23](https://github.com/josx/aor-feathers-client/issues/23)
+- Write package description [\#17](https://github.com/josx/aor-feathers-client/issues/17)
+
+**Merged pull requests:**
+
+- Update contributors [\#34](https://github.com/josx/aor-feathers-client/pull/34) ([josx](https://github.com/josx))
+- support for resource specific id field overrides [\#33](https://github.com/josx/aor-feathers-client/pull/33) ([tony-kerz](https://github.com/tony-kerz))
+- Implements AUTH\_ERROR support [\#32](https://github.com/josx/aor-feathers-client/pull/32) ([lijoantony](https://github.com/lijoantony))
+
+## [v0.4.0](https://github.com/josx/aor-feathers-client/tree/v0.4.0) (2017-07-13)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.3.1...v0.4.0)
+
+**Closed issues:**
+
+- Duplicated Presentation when using mongoose [\#25](https://github.com/josx/aor-feathers-client/issues/25)
+- Add circleCI to automate PR testing ? [\#22](https://github.com/josx/aor-feathers-client/issues/22)
+- Custom identifiers/primary keys for in resources [\#16](https://github.com/josx/aor-feathers-client/issues/16)
+- feathers-client in peerDependencies ? [\#15](https://github.com/josx/aor-feathers-client/issues/15)
+
+**Merged pull requests:**
+
+- Custom ids support [\#26](https://github.com/josx/aor-feathers-client/pull/26) ([josx](https://github.com/josx))
+- Add circle ci [\#24](https://github.com/josx/aor-feathers-client/pull/24) ([fonzarely](https://github.com/fonzarely))
 - Add feathers-client as peerDependencies [\#19](https://github.com/josx/aor-feathers-client/pull/19) ([fonzarely](https://github.com/fonzarely))
 - Fix response mapping on delete routes [\#18](https://github.com/josx/aor-feathers-client/pull/18) ([wedneyyuri](https://github.com/wedneyyuri))
 - add some tests for rest client [\#14](https://github.com/josx/aor-feathers-client/pull/14) ([AmrN](https://github.com/AmrN))
