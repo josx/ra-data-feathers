@@ -77,7 +77,7 @@ describe('Rest Client', function () {
     });
   });
 
-  describe.only('when called with GET_MANY_REFERENCE', function () {
+  describe('when called with GET_MANY_REFERENCE', function () {
     let params = {
       pagination: {
         page: 10,
