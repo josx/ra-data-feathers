@@ -4,6 +4,7 @@ The perfect match to build Backend and Frontend Admin, based on REST services.
 For using [feathers](https://www.feathersjs.com) with [admin-on-rest](https://github.com/marmelab/admin-on-rest).
 
 ## Features
+* GET_MANY_REFERENCE
 * GET_MANY
 * GET_LIST
 * GET_ONE
