@@ -47,19 +47,19 @@ export default (client, options = {}) => (type, params) => {
       so that's why the permissions are decoded here and not in AUTH_LOGIN.
       */
       //Get the permissions from localstorage if any.
-      const localPrems = JSON.parse(localStorage.getItem(permissionsKey));
+      const permissions = JSON.parse(localStorage.getItem(permissionsKey));
       //If any, provide them.
-      if (localPrems) {
-        return Promise.resolve(localPrems);
+      if (permissions) {
+        return Promise.resolve(permissions);
       }
       // Or find them from the token, save them and provide them.
       else {
         try {
           const jtwToken = localStorage.getItem(storageKey);
           const decodedToken = decodeJwt(jtwToken);
-          const perms = decodedToken[permissionsField] ? decodedToken[permissionsField] : [];
-          localStorage.setItem(permissionsKey, JSON.stringify(perms));
-          return Promise.resolve(perms);
+          const permissions = decodedToken[permissionsField] ? decodedToken[permissionsField] : [];
+          localStorage.setItem(permissionsKey, JSON.stringify(permissions));
+          return Promise.resolve(permissions);
         }
         catch (e) {
           return Promise.resolve('[]');
