@@ -43,7 +43,8 @@
   "peerDependencies": {
     "admin-on-rest": "^1.0.1",
     "debug": "^3.0.0",
-    "feathers-client": ">=1.9.0"
+    "feathers-client": ">=1.9.0",
+    "jwt-decode": "^2.2.0"
   },
   "devDependencies": {
     "admin-on-rest": "^1.0.1",
