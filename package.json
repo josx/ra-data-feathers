@@ -54,6 +54,7 @@
     "babel-preset-stage-0": "^6.16.0",
     "chai": "^3.5.0",
     "istanbul": "^0.4.5",
+    "jwt-decode": "^2.2.0",
     "mocha": "^3.4.1",
     "sinon": "^2.2.0"
   },
