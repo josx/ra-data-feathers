@@ -1,5 +1,21 @@
 # Change Log
 
+## [v0.7.0](https://github.com/josx/aor-feathers-client/tree/v0.7.0) (2017-10-09)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.6.0...v0.7.0)
+
+**Closed issues:**
+
+- I left a describe.only in unit tests. Sorry [\#44](https://github.com/josx/aor-feathers-client/issues/44)
+- Add AUTH\_GET\_PERMISSIONS to authClient [\#43](https://github.com/josx/aor-feathers-client/issues/43)
+- return object for restClient [\#40](https://github.com/josx/aor-feathers-client/issues/40)
+- feathers-jwt deleted on page reload [\#39](https://github.com/josx/aor-feathers-client/issues/39)
+- Add GET\_MANY\_REFERENCES support [\#7](https://github.com/josx/aor-feathers-client/issues/7)
+
+**Merged pull requests:**
+
+- AUTH\_GET\_PERMISSIONS [\#45](https://github.com/josx/aor-feathers-client/pull/45) ([fonzarely](https://github.com/fonzarely))
+- GET MANY REFERENCE [\#42](https://github.com/josx/aor-feathers-client/pull/42) ([fonzarely](https://github.com/fonzarely))
+
 ## [v0.6.0](https://github.com/josx/aor-feathers-client/tree/v0.6.0) (2017-09-01)
 [Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.5.0...v0.6.0)
 
