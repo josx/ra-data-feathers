@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.7.1](https://github.com/josx/aor-feathers-client/tree/v0.7.1) (2017-10-09)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.7.0...v0.7.1)
+
+**Merged pull requests:**
+
+- Add jwt-decode on dev deps [\#46](https://github.com/josx/aor-feathers-client/pull/46) ([josx](https://github.com/josx))
+
 ## [v0.7.0](https://github.com/josx/aor-feathers-client/tree/v0.7.0) (2017-10-09)
 [Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.6.0...v0.7.0)
 
