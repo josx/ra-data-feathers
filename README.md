@@ -41,6 +41,56 @@ npm run test
 
 ## Example with Feathersjs stable (AUK)
 
+Users service must have a roles field. We are using users.roles
+
+```js
+// in feathers-app/src/authentication.js
+
+[...]
+
+app.service('authentication').hooks({
+    before: {
+      create: [
+        authentication.hooks.authenticate(config.strategies),
+        // This hook adds the `roles` attribute to the JWT payload by
+        // modifying params.payload.
+        hook => {
+          // make sure params.payload exists
+          hook.params.payload = hook.params.payload || {};
+          // merge in a `roles` property
+          Object.assign(hook.params.payload, {roles: hook.params.user.roles});
+        }
+      ],
+      remove: [
+        authentication.hooks.authenticate('jwt')
+      ]
+    }
+});
+
+```
+
+If your role field has another name than "roles" you must change hook.params.user.roles by hook.params.user.[yourRolesField] in Object.assign(hook.params.payload, {roles: hook.params.user.roles})
+
+EACH feathers service MUST use a before hook as restrictToRoles. 
+
+For example, 
+
+```js
+//in feathers-app/src/users.hooks.js
+
+  before: {
+    all: [],
+    find: [ authenticate('jwt'), restrictToRoles({ roles: ['admin']}) ],
+    get: [ ...restrict ],
+    create: [ authenticate('jwt'), restrictToRoles({ roles: ['admin']}), hashPassword() ],
+    update: [ ...restrict, hashPassword() ],
+    patch: [ ...restrict, hashPassword() ],
+    remove: [ authenticate('jwt'), restrictToRoles({ roles: ['admin']}) ]
+  },
+  
+```
+
+
 ```js
 // in src/feathersClient.js
 import feathers from 'feathers-client';
@@ -77,12 +127,24 @@ const App = () => (
     authClient={authClient(feathersClient, authClientOptions)}
     restClient={restClient(feathersClient, options)}
   >
-    <Resource name="posts" list={PostList} />
+    {permissions => [
+      permissions === 'admin' ? <Resource name="users" list={UsersList} /> : null,
+      <Resource
+        name="post"
+        list={PostList}
+        create={permissions === 'admin' ? PostCreate : null}
+        edit={permissions === 'admin' ? PostEdit : null}
+        remove={permissions === 'admin' ? Delete : null}
+      />
+    ]}
   </Admin>
 );
 
+
 export default App;
 ```
+
+You can find a complete example in [https://github.com/kfern/feathers-aor-test-integration](https://github.com/kfern/feathers-aor-test-integration)
 
 ## License
 
