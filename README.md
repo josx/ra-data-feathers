@@ -120,7 +120,10 @@ const authClientOptions = {
 const options = { id: '_id' };
 
 // to rename id field(s) for specific resources use this syntax:
-const options = {'my-resource': {id: '_id'}}
+const options = {'my-resource': {id: '_id'}};
+
+// Use HTTP PATCH method instead of PUT to implement UPDATE
+const options = { usePatch: true };
 
 const App = () => (
   <Admin
