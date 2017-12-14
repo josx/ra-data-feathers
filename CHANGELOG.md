@@ -1,5 +1,18 @@
 # Change Log
 
+## [v0.8.0](https://github.com/josx/aor-feathers-client/tree/v0.8.0) (2017-12-14)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.7.1...v0.8.0)
+
+**Closed issues:**
+
+- Permission example in readme [\#47](https://github.com/josx/aor-feathers-client/issues/47)
+- Use PATCH instead of PUT [\#20](https://github.com/josx/aor-feathers-client/issues/20)
+
+**Merged pull requests:**
+
+- Use PATCH instead of PUT for UPDATE [\#49](https://github.com/josx/aor-feathers-client/pull/49) ([lijoantony](https://github.com/lijoantony))
+- Permission example in readme \(related to \#47\) [\#48](https://github.com/josx/aor-feathers-client/pull/48) ([kfern](https://github.com/kfern))
+
 ## [v0.7.1](https://github.com/josx/aor-feathers-client/tree/v0.7.1) (2017-10-09)
 [Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.7.0...v0.7.1)
 
