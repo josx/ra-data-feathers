@@ -62,13 +62,13 @@
   },
   "contributors": [
     {
-      "name": "Wédney Yuri",
+      "name": "Igor Berlenko",
       "email": null,
-      "url": "https://github.com/wedneyyuri",
+      "url": "https://github.com/7flash",
       "contributions": 2,
       "additions": 4,
       "deletions": 3,
-      "hireable": true
+      "hireable": null
     },
     {
       "name": "Dream",
@@ -77,15 +77,6 @@
       "contributions": 2,
       "additions": 2,
       "deletions": 0,
-      "hireable": null
-    },
-    {
-      "name": "Igor Berlenko",
-      "email": null,
-      "url": "https://github.com/7flash",
-      "contributions": 2,
-      "additions": 4,
-      "deletions": 3,
       "hireable": null
     },
     {
@@ -101,18 +92,18 @@
       "name": "Lijo Antony",
       "email": null,
       "url": "https://github.com/lijoantony",
-      "contributions": 2,
-      "additions": 11,
-      "deletions": 2,
+      "contributions": 3,
+      "additions": 22,
+      "deletions": 4,
       "hireable": true
     },
     {
-      "name": "tony kerz",
+      "name": "Amr Noman",
       "email": null,
-      "url": "https://github.com/tony-kerz",
-      "contributions": 3,
-      "additions": 251,
-      "deletions": 100,
+      "url": "https://github.com/AmrN",
+      "contributions": 4,
+      "additions": 239,
+      "deletions": 7,
       "hireable": null
     },
     {
@@ -125,31 +116,49 @@
       "hireable": null
     },
     {
-      "name": "Fabien Champigny",
-      "email": null,
-      "url": "https://github.com/fonzarely",
-      "contributions": 4,
-      "additions": 2409,
-      "deletions": 2,
-      "hireable": null
-    },
-    {
-      "name": "Amr Noman",
-      "email": null,
-      "url": "https://github.com/AmrN",
-      "contributions": 4,
-      "additions": 239,
-      "deletions": 7,
-      "hireable": null
-    },
-    {
       "name": "José Luis Di Biase",
       "email": null,
       "url": "https://github.com/josx",
-      "contributions": 27,
-      "additions": 840,
-      "deletions": 152,
+      "contributions": 36,
+      "additions": 1003,
+      "deletions": 262,
       "hireable": true
+    },
+    {
+      "name": "Fabien Champigny",
+      "email": null,
+      "url": "https://github.com/fonzarely",
+      "contributions": 6,
+      "additions": 2507,
+      "deletions": 19,
+      "hireable": null
+    },
+    {
+      "name": "Wédney Yuri",
+      "email": null,
+      "url": "https://github.com/wedneyyuri",
+      "contributions": 2,
+      "additions": 4,
+      "deletions": 3,
+      "hireable": true
+    },
+    {
+      "name": "Fernando Navarro",
+      "email": null,
+      "url": "https://github.com/kfern",
+      "contributions": 1,
+      "additions": 63,
+      "deletions": 1,
+      "hireable": null
+    },
+    {
+      "name": "tony kerz",
+      "email": null,
+      "url": "https://github.com/tony-kerz",
+      "contributions": 3,
+      "additions": 251,
+      "deletions": 100,
+      "hireable": null
     }
   ]
 }
