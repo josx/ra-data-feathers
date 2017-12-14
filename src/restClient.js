@@ -54,7 +54,8 @@ export default (client, options = {}) => {
         return service.get(params.id)
       case UPDATE:
         if (usePatch) {
-          return service.patch(params.id, diff(params.previousData, params.data))
+          const data = params.previousData ? diff(params.previousData, params.data) : params.data
+          return service.patch(params.id, data)
         }
         return service.update(params.id, params.data)
       case CREATE:
