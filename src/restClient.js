@@ -8,6 +8,7 @@ import {
   DELETE
 } from 'admin-on-rest/lib/rest/types'
 import debug from 'debug'
+import diff from 'object-diff'
 
 const dbg = debug('aor-feathers-client:rest-client')
 
@@ -16,6 +17,7 @@ function getIdKey({resource, options}) {
 }
 
 export default (client, options = {}) => {
+  const usePatch = !!options.usePatch;
   const mapRequest = (type, resource, params) => {
     const idKey = getIdKey({resource, options})
     dbg('type=%o, resource=%o, params=%o, idKey=%o', type, resource, params, idKey)
@@ -51,6 +53,9 @@ export default (client, options = {}) => {
       case GET_ONE:
         return service.get(params.id)
       case UPDATE:
+        if (usePatch) {
+          return service.patch(params.id, diff(params.previousData, params.data))
+        }
         return service.update(params.id, params.data)
       case CREATE:
         return service.create(params.data)
