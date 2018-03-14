@@ -137,7 +137,10 @@ describe('Rest Client', function () {
         order: 'DESC'
       },
       filter: {
-        name: 'john'
+        name: 'john',
+        address: {
+          city: 'London'
+        }
       }
     };
     beforeEach(function () {
@@ -162,7 +165,8 @@ describe('Rest Client', function () {
         $limit: 20,
         $skip: 20 * 9,
         '$sort[id]': '-1',
-        name: 'john'
+        name: 'john',
+        'address.city': 'London'
       };
       return asyncResult.then(result => {
         expect(fakeService.find.calledWith({
