@@ -7,6 +7,7 @@ import {
   UPDATE,
   DELETE
 } from 'admin-on-rest/lib/rest/types'
+import { fetchUtils } from 'admin-on-rest';
 import debug from 'debug'
 import diff from 'object-diff'
 
@@ -47,7 +48,7 @@ export default (client, options = {}) => {
         if (order) {
           query[sortKey] = JSON.stringify(sortVal)
         }
-        Object.assign(query, params.filter)
+        Object.assign(query, fetchUtils.flattenObject(params.filter));
         dbg('query=%o', query)
         return service.find({query})
       case GET_ONE:
