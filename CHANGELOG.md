@@ -1,5 +1,18 @@
 # Change Log
 
+## [v0.9.0](https://github.com/josx/aor-feathers-client/tree/v0.9.0) (2018-03-15)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.8.0...v0.9.0)
+
+**Closed issues:**
+
+- Filtering by nested properties [\#52](https://github.com/josx/aor-feathers-client/issues/52)
+- Does this work with feathers v3? \[question\] [\#51](https://github.com/josx/aor-feathers-client/issues/51)
+
+**Merged pull requests:**
+
+- Fix filter query for nested properties [\#53](https://github.com/josx/aor-feathers-client/pull/53) ([dprentis](https://github.com/dprentis))
+- usePatch: Do object-diff only when params.previousData is present [\#50](https://github.com/josx/aor-feathers-client/pull/50) ([lijoantony](https://github.com/lijoantony))
+
 ## [v0.8.0](https://github.com/josx/aor-feathers-client/tree/v0.8.0) (2017-12-14)
 [Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.7.1...v0.8.0)
 
