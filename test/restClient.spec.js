@@ -3,7 +3,17 @@
 const expect = require('chai').expect;
 const sinon = require('sinon');
 const restClient = require('../lib').restClient;
-const types = require('admin-on-rest/lib/rest/types');
+
+import {
+  GET_MANY,
+  GET_MANY_REFERENCE,
+  GET_LIST,
+  GET_ONE,
+  CREATE,
+  UPDATE,
+  DELETE,
+} from 'react-admin'
+
 const debug = require('debug')
 
 const dbg = debug('aor-feathers-client:test')
@@ -49,7 +59,7 @@ describe('Rest Client', function () {
     let ids = [1, 2, 3];
     beforeEach(function () {
       setupClient();
-      asyncResult = aorClient(types.GET_MANY, 'posts', { ids });
+      asyncResult = aorClient(GET_MANY, 'posts', { ids });
     });
 
     it("calls the client's find method", function () {
@@ -95,7 +105,7 @@ describe('Rest Client', function () {
     };
     beforeEach(function () {
       setupClient();
-      asyncResult = aorClient(types.GET_MANY_REFERENCE, 'posts', params);
+      asyncResult = aorClient(GET_MANY_REFERENCE, 'posts', params);
     });
 
     it("calls the client's find method", function () {
@@ -145,7 +155,7 @@ describe('Rest Client', function () {
     };
     beforeEach(function () {
       setupClient();
-      asyncResult = aorClient(types.GET_LIST, 'posts', params);
+      asyncResult = aorClient(GET_LIST, 'posts', params);
     });
 
     it("calls the client's find method", function () {
@@ -193,7 +203,7 @@ describe('Rest Client', function () {
 
     it("id-option: calls the client's find method", function () {
       setupClient({id: '_id'});
-      asyncResult = aorClient(types.GET_LIST, 'posts', params);
+      asyncResult = aorClient(GET_LIST, 'posts', params);
       return asyncResult.then(result => {
         expect(fakeService.find.calledOnce).to.be.true;
       });
@@ -237,7 +247,7 @@ describe('Rest Client', function () {
 
     it("resource-id-option: calls the client's find method", function () {
       setupClient({posts: {id: '_id'}});
-      asyncResult = aorClient(types.GET_LIST, 'posts', params);
+      asyncResult = aorClient(GET_LIST, 'posts', params);
       return asyncResult.then(result => {
         expect(fakeService.find.calledOnce).to.be.true;
       });
@@ -265,7 +275,7 @@ describe('Rest Client', function () {
 
     it("resource-id-option: calls the client's find method for default handled resource", function () {
       setupClient({widgets: {id: '_id'}});
-      asyncResult = aorClient(types.GET_LIST, 'posts', params);
+      asyncResult = aorClient(GET_LIST, 'posts', params);
       return asyncResult.then(result => {
         expect(fakeService.find.calledOnce).to.be.true;
       });
@@ -296,7 +306,7 @@ describe('Rest Client', function () {
     let params = { id: 1 };
     beforeEach(function () {
       setupClient();
-      asyncResult = aorClient(types.GET_ONE, 'posts', params);
+      asyncResult = aorClient(GET_ONE, 'posts', params);
     });
 
     it("calls the client's get method with the id in params", function () {
@@ -322,7 +332,7 @@ describe('Rest Client', function () {
     };
     beforeEach(function () {
       setupClient();
-      asyncResult = aorClient(types.UPDATE, 'posts', params);
+      asyncResult = aorClient(UPDATE, 'posts', params);
     });
 
     it("calls the client's update method with the id and data in params", function () {
@@ -347,7 +357,7 @@ describe('Rest Client', function () {
     };
     beforeEach(function () {
       setupClient();
-      asyncResult = aorClient(types.CREATE, 'posts', params);
+      asyncResult = aorClient(CREATE, 'posts', params);
     });
 
     it("calls the client's create method with the data in params", function () {
@@ -368,7 +378,7 @@ describe('Rest Client', function () {
     let params = { id: 1 };
     beforeEach(function () {
       setupClient();
-      asyncResult = aorClient(types.DELETE, 'posts', params);
+      asyncResult = aorClient(DELETE, 'posts', params);
     });
 
     it("calls the client's remove method with the id in params", function () {

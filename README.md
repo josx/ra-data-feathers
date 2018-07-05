@@ -1,7 +1,9 @@
-# Feathers REST Client for Admin-on-rest
+# Feathers REST Client for React-admin
 
 The perfect match to build Backend and Frontend Admin, based on REST services.
-For using [feathers](https://www.feathersjs.com) with [admin-on-rest](https://github.com/marmelab/admin-on-rest).
+For using [feathers](https://www.feathersjs.com) with [react-admin](https://github.com/marmelab/react-admin).
+
+> If you are searching for admin-on-rest (older react-admin version), please use [1.0.0 version](https://github.com/josx/aor-feathers-client/releases/tag/v1.0.0)
 
 ## Features
 * GET_MANY_REFERENCE
@@ -20,7 +22,7 @@ For using [feathers](https://www.feathersjs.com) with [admin-on-rest](https://gi
 
 ## Installation
 
-In your admin-on-rest app just add aor-feathers-client dependency:
+In your react-admin app just add aor-feathers-client dependency:
 
 ```sh
 npm install aor-feathers-client --save
@@ -71,9 +73,9 @@ app.service('authentication').hooks({
 
 If your role field has another name than "roles" you must change hook.params.user.roles by hook.params.user.[yourRolesField] in Object.assign(hook.params.payload, {roles: hook.params.user.roles})
 
-EACH feathers service MUST use a before hook as restrictToRoles. 
+EACH feathers service MUST use a before hook as restrictToRoles.
 
-For example, 
+For example,
 
 ```js
 //in feathers-app/src/users.hooks.js
@@ -87,26 +89,27 @@ For example,
     patch: [ ...restrict, hashPassword() ],
     remove: [ authenticate('jwt'), restrictToRoles({ roles: ['admin']}) ]
   },
-  
+
 ```
 
 
 ```js
 // in src/feathersClient.js
-import feathers from 'feathers-client';
+import feathers from "@feathersjs/client";
+import auth from "@feathersjs/authentication-client";
 
 const host = 'http://localhost:3030';
+const authOptions = { jwtStrategy: 'jwt', storage: window.localStorage };
 
 export default feathers()
-    .configure(feathers.hooks())
-    .configure(feathers.rest(host).fetch(window.fetch.bind(window)))
-    .configure(feathers.authentication({ jwtStrategy: 'jwt', storage: window.localStorage }));
+    .configure(feathers.rest(host).fetch(window.fetch.bind(window)));
+    .configure(auth(authOptions));
 ```
 
 ```js
 // in src/App.js
 import React from 'react';
-import { Admin, Resource } from 'admin-on-rest';
+import { Admin, Resource } from 'react-admin';
 import { authClient, restClient } from 'aor-feathers-client';
 import feathersClient from './feathersClient';
 import { PostList } from './posts';
@@ -127,8 +130,8 @@ const options = { usePatch: true };
 
 const App = () => (
   <Admin
-    authClient={authClient(feathersClient, authClientOptions)}
-    restClient={restClient(feathersClient, options)}
+    authProvider={authClient(feathersClient, authClientOptions)}
+    dataProvider={restClient(feathersClient, options)}
   >
     {permissions => [
       permissions === 'admin' ? <Resource name="users" list={UsersList} /> : null,

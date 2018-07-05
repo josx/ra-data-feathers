@@ -4,7 +4,7 @@ import {
   AUTH_CHECK,
   AUTH_ERROR,
   AUTH_GET_PERMISSIONS
-} from 'admin-on-rest';
+} from 'react-admin';
 import decodeJwt from 'jwt-decode';
 
 export default (client, options = {}) => (type, params) => {
