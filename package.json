@@ -14,8 +14,8 @@
     "release:patch": "npm version patch && npm publish",
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish",
-    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts",
-    "mocha": "env DEBUG=aor-feathers-client:* mocha"
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts --require babel-register",
+    "mocha": "env DEBUG=aor-feathers-client:* mocha  --require babel-register"
   },
   "files": [
     "LICENSE",
@@ -54,11 +54,13 @@
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-stage-0": "^6.16.0",
+    "babel-register": "^6.26.0",
     "chai": "^3.5.0",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
-    "react": "15.4.0",
-    "react-dom": "15.4.0",
+    "react-admin": "^2.1.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "sinon": "^2.2.0"
   },
   "contributors": [
