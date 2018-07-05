@@ -1,7 +1,9 @@
 # Feathers REST Client for React-admin
 
 The perfect match to build Backend and Frontend Admin, based on REST services.
-For using [feathers](https://www.feathersjs.com) with [admin-on-rest](https://github.com/marmelab/react-admin).
+For using [feathers](https://www.feathersjs.com) with [react-admin](https://github.com/marmelab/react-admin).
+
+> If you are searching for admin-on-rest (older react-admin version), please use [1.0.0 version](https://github.com/josx/aor-feathers-client/releases/tag/v1.0.0)
 
 ## Features
 * GET_MANY_REFERENCE
