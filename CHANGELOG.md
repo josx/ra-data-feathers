@@ -1,5 +1,12 @@
 # Change Log
 
+## [v2.0.0](https://github.com/josx/aor-feathers-client/tree/v2.0.0) (2018-07-05)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v1.0.0...v2.0.0)
+
+**Merged pull requests:**
+
+- React admin [\#56](https://github.com/josx/aor-feathers-client/pull/56) ([josx](https://github.com/josx))
+
 ## [v1.0.0](https://github.com/josx/aor-feathers-client/tree/v1.0.0) (2018-07-05)
 [Full Changelog](https://github.com/josx/aor-feathers-client/compare/v0.9.0...v1.0.0)
 
