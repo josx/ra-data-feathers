@@ -1,5 +1,12 @@
 # Change Log
 
+## [v2.0.1](https://github.com/josx/aor-feathers-client/tree/v2.0.1) (2018-07-13)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v2.0.0...v2.0.1)
+
+**Merged pull requests:**
+
+- Authclient options: Custom username and password [\#57](https://github.com/josx/aor-feathers-client/pull/57) ([josx](https://github.com/josx))
+
 ## [v2.0.0](https://github.com/josx/aor-feathers-client/tree/v2.0.0) (2018-07-05)
 [Full Changelog](https://github.com/josx/aor-feathers-client/compare/v1.0.0...v2.0.0)
 
