@@ -76,7 +76,7 @@ export default (client, options = {}) => {
       case DELETE:
         return {data: {...response, id: response[idKey]}}
       case CREATE:
-        return {data: {...params.data, id: response[idKey]}}
+        return {data: { ...params.data, ...response, id: response[idKey]}}
       case GET_MANY_REFERENCE: // fix GET_MANY_REFERENCE missing id
       case GET_MANY: // fix GET_MANY missing id
       case GET_LIST:
