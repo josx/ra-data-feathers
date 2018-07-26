@@ -39,7 +39,7 @@ export default (client, options = {}) => (type, params) => {
       return localStorage.getItem(storageKey) ? Promise.resolve() : Promise.reject();
     case AUTH_ERROR:
       const { code } = params
-      if (code === 401) {
+      if (code === 401 || code === 403) {
         localStorage.removeItem(storageKey);
         localStorage.removeItem(permissionsKey);
         return Promise.reject();
@@ -66,7 +66,7 @@ export default (client, options = {}) => (type, params) => {
           return Promise.resolve(permissions);
         }
         catch (e) {
-          return Promise.resolve('[]');
+          return Promise.reject();
         }
       }
 
