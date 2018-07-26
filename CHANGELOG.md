@@ -1,5 +1,16 @@
 # Change Log
 
+## [v2.0.3](https://github.com/josx/aor-feathers-client/tree/v2.0.3) (2018-07-26)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v2.0.2...v2.0.3)
+
+**Closed issues:**
+
+- on AUTH\_GET\_PERMISSIONS reject promise [\#61](https://github.com/josx/aor-feathers-client/issues/61)
+
+**Merged pull requests:**
+
+- CREATE: adding backend api response to dataprovider response [\#63](https://github.com/josx/aor-feathers-client/pull/63) ([josx](https://github.com/josx))
+
 ## [v2.0.2](https://github.com/josx/aor-feathers-client/tree/v2.0.2) (2018-07-26)
 [Full Changelog](https://github.com/josx/aor-feathers-client/compare/v2.0.1...v2.0.2)
 
