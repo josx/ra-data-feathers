@@ -1,5 +1,12 @@
 # Change Log
 
+## [v2.0.4](https://github.com/josx/aor-feathers-client/tree/v2.0.4) (2018-08-10)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v2.0.3...v2.0.4)
+
+**Merged pull requests:**
+
+- Kill calling feathers authenticate for every service [\#64](https://github.com/josx/aor-feathers-client/pull/64) ([josx](https://github.com/josx))
+
 ## [v2.0.3](https://github.com/josx/aor-feathers-client/tree/v2.0.3) (2018-07-26)
 [Full Changelog](https://github.com/josx/aor-feathers-client/compare/v2.0.2...v2.0.3)
 
