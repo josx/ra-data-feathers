@@ -93,8 +93,6 @@ export default (client, options = {}) => {
   }
 
   return (type, resource, params) =>
-    client.authenticate()
-        .then(() => mapRequest(type, resource, params))
-        .then(response => mapResponse(response, type, resource, params)
-    )
+    mapRequest(type, resource, params)
+      .then(response => mapResponse(response, type, resource, params))
 }
