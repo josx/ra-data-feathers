@@ -6,6 +6,7 @@ import {
   CREATE,
   UPDATE,
   DELETE,
+  DELETE_MANY,
   fetchUtils
 } from 'react-admin'
 import debug from 'debug'
@@ -63,6 +64,8 @@ export default (client, options = {}) => {
         return service.create(params.data)
       case DELETE:
         return service.remove(params.id)
+      case DELETE_MANY:
+        return Promise.all(params.ids.map(id => (service.remove(id) )));
       default:
         throw new Error(`Unsupported FeathersJS restClient action type ${type}`)
     }
@@ -75,6 +78,8 @@ export default (client, options = {}) => {
       case UPDATE:
       case DELETE:
         return {data: {...response, id: response[idKey]}}
+      case DELETE_MANY:
+        return {data: response.map(record => record[idKey])}
       case CREATE:
         return {data: { ...params.data, ...response, id: response[idKey]}}
       case GET_MANY_REFERENCE: // fix GET_MANY_REFERENCE missing id
