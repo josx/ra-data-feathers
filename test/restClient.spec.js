@@ -12,6 +12,7 @@ import {
   CREATE,
   UPDATE,
   DELETE,
+  DELETE_MANY
 } from 'react-admin'
 
 const debug = require('debug')
@@ -395,6 +396,28 @@ describe('Rest Client', function () {
     });
   });
 
+  describe("when called with DELETE_MANY", function () {
+    let params = { ids: [1, 2] };
+    beforeEach(function () {
+      setupClient();
+      asyncResult = aorClient(DELETE_MANY, "posts", params);
+    });
+
+    it("calls the client's remove method twice with the ids in params", function() {
+      return asyncResult.then(result => {
+        expect(fakeService.remove.calledTwice).to.be.true;
+        expect(fakeService.remove.firstCall.calledWith(1));
+        expect(fakeService.remove.secondCall.calledWith(2));
+      });
+    });
+
+    it("returns the ids of the records returned by the client", function () {
+      return asyncResult.then(result => {
+        expect(result).to.deep.equal({ data: [removeResult['id'], removeResult['id']] });
+      });
+    });
+  });
+    
   describe('when called with an invalid type', function () {
     beforeEach(function () {
       setupClient();
