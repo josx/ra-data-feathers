@@ -13,6 +13,7 @@ For using [feathers](https://www.feathersjs.com) with [react-admin](https://gith
 * CREATE
 * UPDATE
 * DELETE
+* DELETE_MANY
 * AUTH_LOGIN
 * AUTH_LOGOUT
 * AUTH_CHECK
