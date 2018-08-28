@@ -71,6 +71,6 @@ export default (client, options = {}) => (type, params) => {
       }
 
     default:
-      throw new Error(`Unsupported FeathersJS authClient action type ${type}`);
+      return Promise.reject(`Unsupported FeathersJS authClient action type ${type}`);
   }
 };
