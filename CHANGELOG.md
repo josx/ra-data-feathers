@@ -1,5 +1,20 @@
 # Change Log
 
+## [v2.0.5](https://github.com/josx/aor-feathers-client/tree/v2.0.5) (2018-09-13)
+[Full Changelog](https://github.com/josx/aor-feathers-client/compare/v2.0.4...v2.0.5)
+
+**Closed issues:**
+
+- Add DELETE\_MANY support [\#65](https://github.com/josx/aor-feathers-client/issues/65)
+- AuthClient: check if not any type [\#60](https://github.com/josx/aor-feathers-client/issues/60)
+
+**Merged pull requests:**
+
+- Update istanbul version [\#69](https://github.com/josx/aor-feathers-client/pull/69) ([josx](https://github.com/josx))
+- Add redirectTo to options [\#68](https://github.com/josx/aor-feathers-client/pull/68) ([nicholasnelson](https://github.com/nicholasnelson))
+- Replace throw with Promise.reject [\#67](https://github.com/josx/aor-feathers-client/pull/67) ([nicholasnelson](https://github.com/nicholasnelson))
+- Implement DELETE\_MANY [\#66](https://github.com/josx/aor-feathers-client/pull/66) ([nicholasnelson](https://github.com/nicholasnelson))
+
 ## [v2.0.4](https://github.com/josx/aor-feathers-client/tree/v2.0.4) (2018-08-10)
 [Full Changelog](https://github.com/josx/aor-feathers-client/compare/v2.0.3...v2.0.4)
 
