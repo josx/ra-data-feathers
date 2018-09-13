@@ -66,12 +66,48 @@
   },
   "contributors": [
     {
-      "name": "Dream",
+      "name": "Fernando Navarro",
       "email": null,
-      "url": "https://github.com/dreamrace",
-      "contributions": 2,
-      "additions": 2,
+      "url": "https://github.com/kfern",
+      "contributions": 1,
+      "additions": 63,
+      "deletions": 1,
+      "hireable": null
+    },
+    {
+      "name": "Ryan Harmuth",
+      "email": null,
+      "url": "https://github.com/Ryanthegiantlion",
+      "contributions": 1,
+      "additions": 4,
       "deletions": 0,
+      "hireable": true
+    },
+    {
+      "name": "Wédney Yuri",
+      "email": null,
+      "url": "https://github.com/wedneyyuri",
+      "contributions": 2,
+      "additions": 4,
+      "deletions": 3,
+      "hireable": true
+    },
+    {
+      "name": "Nicholas Nelson",
+      "email": null,
+      "url": "https://github.com/nicholasnelson",
+      "contributions": 3,
+      "additions": 171,
+      "deletions": 32,
+      "hireable": true
+    },
+    {
+      "name": "Igor Berlenko",
+      "email": null,
+      "url": "https://github.com/7flash",
+      "contributions": 2,
+      "additions": 4,
+      "deletions": 3,
       "hireable": null
     },
     {
@@ -93,7 +129,7 @@
       "hireable": null
     },
     {
-      "name": "Fabien Champigny",
+      "name": "F.C",
       "email": null,
       "url": "https://github.com/fonzarely",
       "contributions": 6,
@@ -102,30 +138,21 @@
       "hireable": null
     },
     {
-      "name": "Tomasz Bak",
+      "name": "Dream",
       "email": null,
-      "url": "https://github.com/tb",
+      "url": "https://github.com/dreamrace",
       "contributions": 2,
-      "additions": 187,
-      "deletions": 127,
+      "additions": 2,
+      "deletions": 0,
       "hireable": null
     },
     {
-      "name": "Igor Berlenko",
+      "name": "José Luis Di Biase",
       "email": null,
-      "url": "https://github.com/7flash",
-      "contributions": 2,
-      "additions": 4,
-      "deletions": 3,
-      "hireable": null
-    },
-    {
-      "name": "Lijo Antony",
-      "email": null,
-      "url": "https://github.com/lijoantony",
-      "contributions": 4,
-      "additions": 24,
-      "deletions": 5,
+      "url": "https://github.com/josx",
+      "contributions": 62,
+      "additions": 6657,
+      "deletions": 1853,
       "hireable": true
     },
     {
@@ -138,40 +165,22 @@
       "hireable": null
     },
     {
-      "name": "José Luis Di Biase",
+      "name": "Lijo Antony",
       "email": null,
-      "url": "https://github.com/josx",
-      "contributions": 39,
-      "additions": 4267,
-      "deletions": 314,
+      "url": "https://github.com/lijoantony",
+      "contributions": 4,
+      "additions": 24,
+      "deletions": 5,
       "hireable": true
     },
     {
-      "name": "Wédney Yuri",
+      "name": "Tomasz Bak",
       "email": null,
-      "url": "https://github.com/wedneyyuri",
+      "url": "https://github.com/tb",
       "contributions": 2,
-      "additions": 4,
-      "deletions": 3,
-      "hireable": true
-    },
-    {
-      "name": "Fernando Navarro",
-      "email": null,
-      "url": "https://github.com/kfern",
-      "contributions": 1,
-      "additions": 63,
-      "deletions": 1,
+      "additions": 187,
+      "deletions": 127,
       "hireable": null
-    },
-    {
-      "name": "Ryan Harmuth",
-      "email": null,
-      "url": "https://github.com/Ryanthegiantlion",
-      "contributions": 1,
-      "additions": 4,
-      "deletions": 0,
-      "hireable": true
     }
   ]
 }
