@@ -14,7 +14,8 @@ export default (client, options = {}) => (type, params) => {
     permissionsKey,
     permissionsField,
     passwordField,
-    usernameField
+    usernameField,
+    redirectTo
   } = Object.assign({}, {
       storageKey: 'token',
       authenticate: { type: 'local' },
@@ -36,7 +37,7 @@ export default (client, options = {}) => (type, params) => {
       localStorage.removeItem(permissionsKey);
       return client.logout();
     case AUTH_CHECK:
-      return localStorage.getItem(storageKey) ? Promise.resolve() : Promise.reject();
+      return localStorage.getItem(storageKey) ? Promise.resolve() : Promise.reject({ redirectTo });
     case AUTH_ERROR:
       const { code } = params
       if (code === 401 || code === 403) {

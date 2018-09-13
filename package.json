@@ -45,6 +45,7 @@
     "@feathersjs/client": "^3.5.3"
   },
   "dependencies": {
+    "chai-as-promised": "^7.1.1",
     "debug": "^3.0.0",
     "jwt-decode": "^2.2.0",
     "object-diff": "^0.0.4"
