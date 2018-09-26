@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:7.10
-    working_directory: ~/aor-feathers-client
+    working_directory: ~/ra-data-feathers
     steps:
       - checkout
       - restore_cache:

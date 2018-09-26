@@ -10,7 +10,7 @@ chai.use(chaiAsPromised);
 
 const debug = require('debug')
 
-const dbg = debug('aor-feathers-client:test')
+const dbg = debug('ra-data-feathers:test')
 
 const fakeClient = {
   // authenticate: ({ email, password }) => { ... }
