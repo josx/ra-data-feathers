@@ -1,5 +1,5 @@
 {
-  "name": "aor-feathers-client",
+  "name": "ra-data-feathers",
   "version": "2.0.5",
   "description": "A feathers client for react-admin",
   "main": "lib/index.js",
@@ -15,7 +15,7 @@
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts --require babel-register",
-    "mocha": "env DEBUG=aor-feathers-client:* mocha  --require babel-register"
+    "mocha": "env DEBUG=ra-data-feathers:* mocha  --require babel-register"
   },
   "files": [
     "LICENSE",
@@ -25,21 +25,22 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/josx/aor-feathers-client.git"
+    "url": "git+https://github.com/josx/ra-data-feathers.git"
   },
   "keywords": [
     "reactjs",
     "react",
     "rest",
     "feathers",
-    "local"
+    "local",
+    "react-admin"
   ],
   "author": "Jose Luis Di Biase",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/josx/aor-feathers-client/issues"
+    "url": "https://github.com/josx/ra-data-feathers/issues"
   },
-  "homepage": "https://github.com/josx/aor-feathers-client#readme",
+  "homepage": "https://github.com/josx/ra-data-feathers#readme",
   "peerDependencies": {
     "react-admin": "^2.1.1",
     "@feathersjs/client": "^3.5.3"

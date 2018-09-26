@@ -1,9 +1,11 @@
-# Feathers REST Client for React-admin
+# Ra-data-feathers
+
+> Feathers REST Client for React-admin
 
 The perfect match to build Backend and Frontend Admin, based on REST services.
 For using [feathers](https://www.feathersjs.com) with [react-admin](https://github.com/marmelab/react-admin).
 
-> If you are searching for admin-on-rest (older react-admin version), please use [1.0.0 version](https://github.com/josx/aor-feathers-client/releases/tag/v1.0.0)
+> If you are searching for admin-on-rest (older react-admin version), please use [1.0.0 version](https://github.com/josx/ra-data-feathers/releases/tag/v1.0.0)
 
 ## Features
 * GET_MANY_REFERENCE
@@ -23,16 +25,16 @@ For using [feathers](https://www.feathersjs.com) with [react-admin](https://gith
 
 ## Installation
 
-In your react-admin app just add aor-feathers-client dependency:
+In your react-admin app just add ra-data-feathers dependency:
 
 ```sh
-npm install aor-feathers-client --save
+npm install ra-data-feathers --save
 ```
 
 or
 
 ```sh
-yarn add aor-feathers-client
+yarn add ra-data-feathers
 ```
 
 ## Running tests
@@ -111,7 +113,7 @@ export default feathers()
 // in src/App.js
 import React from 'react';
 import { Admin, Resource } from 'react-admin';
-import { authClient, restClient } from 'aor-feathers-client';
+import { authClient, restClient } from 'ra-data-feathers';
 import feathersClient from './feathersClient';
 import { PostList } from './posts';
 

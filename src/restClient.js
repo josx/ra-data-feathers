@@ -12,7 +12,7 @@ import {
 import debug from 'debug'
 import diff from 'object-diff'
 
-const dbg = debug('aor-feathers-client:rest-client')
+const dbg = debug('ra-data-feathers:rest-client')
 
 function getIdKey({resource, options}) {
   return (options[resource] && options[resource].id) || options.id || 'id'
