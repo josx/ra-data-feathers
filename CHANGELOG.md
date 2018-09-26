@@ -1,5 +1,21 @@
 # Change Log
 
+## [v2.0.7](https://github.com/josx/ra-data-feathers/tree/v2.0.7) (2018-09-26)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.6...v2.0.7)
+
+## [v2.0.6](https://github.com/josx/ra-data-feathers/tree/v2.0.6) (2018-09-26)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.5...v2.0.6)
+
+**Closed issues:**
+
+- on AUTH\_CHECK add custom redirect to [\#59](https://github.com/josx/ra-data-feathers/issues/59)
+- Trouble accessing the "\_id" value of the loggedin user [\#54](https://github.com/josx/ra-data-feathers/issues/54)
+- Missing depency 'feathers-client' [\#28](https://github.com/josx/ra-data-feathers/issues/28)
+
+**Merged pull requests:**
+
+- Renaming aor-feathers-client to ra-data-feathers [\#72](https://github.com/josx/ra-data-feathers/pull/72) ([josx](https://github.com/josx))
+
 ## [v2.0.5](https://github.com/josx/ra-data-feathers/tree/v2.0.5) (2018-09-13)
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.4...v2.0.5)
 
