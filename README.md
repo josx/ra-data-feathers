@@ -120,6 +120,7 @@ import { PostList } from './posts';
 const authClientOptions = {
   storageKey: 'feathers-jwt',
   authenticate: { strategy: 'local' },
+  redirectTo: '/no-access', //Optional, redirect here if localstorage token check fails on navigation
 };
 
 // to rename id field for *all* resources use this syntax:
