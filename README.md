@@ -16,6 +16,7 @@ ra-data-feathers currently supports the following request types. More informatio
 	* GET_ONE
 	* CREATE
 	* UPDATE
+	* UPDATE_MANY
 	* DELETE
 	* DELETE_MANY
 	* GET_MANY
@@ -26,7 +27,6 @@ ra-data-feathers currently supports the following request types. More informatio
 	* AUTH_CHECK
 	* AUTH_ERROR
 	* AUTH_GET_PERMISSIONS
-> Note that the data provider request type UPDATE_MANY is not yet supported.
 
 ## Installation
 
