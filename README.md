@@ -60,11 +60,11 @@ The ra-data-feathers data provider (restClient) accepts two arguments: `client` 
 `options` contains configurable options for the ra-data-feathers restClient. The `options` argument is optional and can be omitted. In this case, defaults will be used.
 ```
 const options = {
-	id: 'id', // If your database uses an id field other than 'id'. Optional.
-	usePatch: false, // Use PATCH instead of PUT for UPDATE requests. Optional.
-	my_resource: { // Options for individual resources can be set by adding an object with the same name. Optional.
-		id: 'id', // If this specific table uses an id field other than 'id'. Optional.
-	},
+  id: 'id', // If your database uses an id field other than 'id'. Optional.
+  usePatch: false, // Use PATCH instead of PUT for UPDATE requests. Optional.
+  my_resource: { // Options for individual resources can be set by adding an object with the same name. Optional.
+    id: 'id', // If this specific table uses an id field other than 'id'. Optional.
+  },
 }
 ```
 
@@ -77,15 +77,15 @@ const options = {
 
 ```
 const options = {
-	storageKey: 'token', // The key in localStorage used to store the authentication token
-	authenticate: { // Options included in calls to Feathers client.authenticate
-		strategy: 'local', // The authentication strategy Feathers should use
-	},
-	permissionsKey: 'permissions', // The key in localStorage used to store permissions from decoded JWT
-	permissionsField: 'roles', // The key in the decoded JWT containing the user's role
-	passwordField: 'password', // The key used to provide the password to Feathers client.authenticate
-	usernameField: 'email', // The key used to provide the username to Feathers client.authenticate
-	redirectTo: '/login', // Redirect to this path if an AUTH_CHECK fails. Uses the react-admin default of '/login' if omitted. 
+  storageKey: 'token', // The key in localStorage used to store the authentication token
+  authenticate: { // Options included in calls to Feathers client.authenticate
+    strategy: 'local', // The authentication strategy Feathers should use
+  },
+  permissionsKey: 'permissions', // The key in localStorage used to store permissions from decoded JWT
+  permissionsField: 'roles', // The key in the decoded JWT containing the user's role
+  passwordField: 'password', // The key used to provide the password to Feathers client.authenticate
+  usernameField: 'email', // The key used to provide the username to Feathers client.authenticate
+  redirectTo: '/login', // Redirect to this path if an AUTH_CHECK fails. Uses the react-admin default of '/login' if omitted. 
 }
 ```
 
@@ -94,8 +94,8 @@ const options = {
 ra-data-feathers can be used by passing the `restClient` and `authClient` to the react-admin `<Admin>` component as the `dataProvider` and `authProvider` params respectively:
 ```
 <Admin
-	dataProvider={restClient(feathersClient, restClientConfig)}
-	authProvider={authClient(feathersClient, authClientConfig)}
+  dataProvider={restClient(feathersClient, restClientConfig)}
+  authProvider={authClient(feathersClient, authClientConfig)}
 />
 ```
 
@@ -114,34 +114,34 @@ import { AnotherResourceList } from './resources/AnotherResourceList';
 import { restClient, authClient } from 'ra-data-feathers';
 
 const restClientOptions = {
-	id: '_id', // In this example, the database uses '_id' rather than 'id'
-	usePatch: true // Use PATCH instead of PUT for updates
+  id: '_id', // In this example, the database uses '_id' rather than 'id'
+  usePatch: true // Use PATCH instead of PUT for updates
 };
 
 const authClientOptions = {
-	usernameField: 'username', // Our example database might use 'username' rather than 'email'
-	permissionsField: 'userroles', // Use the 'userroles' field on the JWT as the users role
-	redirectTo: '/signin', // Our example login form might be at '/signin', redirect here if AUTH_CHECK fails
+  usernameField: 'username', // Our example database might use 'username' rather than 'email'
+  permissionsField: 'userroles', // Use the 'userroles' field on the JWT as the users role
+  redirectTo: '/signin', // Our example login form might be at '/signin', redirect here if AUTH_CHECK fails
 }
 
 const App = () => (
-	<Admin
-		title='ra-data-feathers Example'
-		dataProvider={restClient(feathersClient, restClientOptions)}
-		authProvider={authClient(feathersClient, authClientOptions)}
-	>
-		{permissions => [
-			<Resource
-				name='a_resource'
-				list={AResourceList}
-			/>
-			permissions === 'admin' ? // Only show this resource if the user role is 'admin'
-				<Resource
-					name='another_resource'
-					list={AnotherResourceList}
-				/> : null;
-		]}
-	</Admin>
+  <Admin
+    title='ra-data-feathers Example'
+    dataProvider={restClient(feathersClient, restClientOptions)}
+    authProvider={authClient(feathersClient, authClientOptions)}
+  >
+    {permissions => [
+      <Resource
+        name='a_resource'
+        list={AResourceList}
+      />
+      permissions === 'admin' ? // Only show this resource if the user role is 'admin'
+        <Resource
+          name='another_resource'
+          list={AnotherResourceList}
+        /> : null;
+    ]}
+  </Admin>
 );
 
 ```
