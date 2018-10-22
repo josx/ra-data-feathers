@@ -11,6 +11,7 @@ import {
   GET_ONE,
   CREATE,
   UPDATE,
+  UPDATE_MANY,
   DELETE,
   DELETE_MANY
 } from 'react-admin'
@@ -37,7 +38,8 @@ function setupClient(options = {}) {
   fakeService = {
     find: sinon.stub().returns(Promise.resolve(findResult)),
     get: sinon.stub().returns(Promise.resolve(getResult)),
-    update: sinon.stub().returns(Promise.resolve(updateResult)),
+    update: sinon.stub().callsFake((id, data) => (Promise.resolve(Object.assign({}, data, { id: id })))),
+    patch: sinon.stub().callsFake((id, data) => (Promise.resolve(Object.assign({}, data, { id: id })))),
     create: sinon.stub().returns(Promise.resolve(createResult)),
     remove: sinon.stub().returns(Promise.resolve(removeResult)),
   };
@@ -350,6 +352,59 @@ describe('Rest Client', function () {
     });
   });
 
+  describe('when called with UPDATE_MANY', function () {
+
+    const params = {
+      ids: [1, 2],
+      data: {
+        title: 'updated'
+      }
+    };
+
+    describe('when options.usePatch is false', function () {
+      const options = { usePatch: false };
+      
+      beforeEach(function () {
+        setupClient(options);
+        asyncResult = aorClient(UPDATE_MANY, "posts", params);
+      });
+
+      it('calls the client\'s update method once for each ID', function () {
+        expect(fakeService.update.calledTwice).to.be.true;
+        expect(fakeService.update.firstCall.calledWith(1, params.data));
+        expect(fakeService.update.secondCall.calledWith(2, params.data));
+      });
+
+      it('returns the ids of the records returned by the client', function () {
+        return asyncResult.then(result => {
+          expect(result).to.deep.equal({ data: params.ids });
+        });
+      });
+    });
+
+    describe('when options.usePatch is true', function () {
+      const options = { usePatch: true };
+
+      beforeEach(function () {
+        setupClient(options);
+        asyncResult = aorClient(UPDATE_MANY, "posts", params);
+      });
+
+      it('calls the client\'s patch method once for each ID', function () {
+        expect(fakeService.patch.calledTwice).to.be.true;
+        expect(fakeService.patch.firstCall.calledWith(1, params.data));
+        expect(fakeService.patch.secondCall.calledWith(2, params.data));
+      });
+
+      it('returns the ids of the records returned by the client', function () {
+        return asyncResult.then(result => {
+          expect(result).to.deep.equal({ data: params.ids });
+        });
+      });
+    });
+
+  });
+
   describe('when called with CREATE', function () {
     let params = {
       data: {
@@ -417,7 +472,7 @@ describe('Rest Client', function () {
       });
     });
   });
-    
+
   describe('when called with an invalid type', function () {
     beforeEach(function () {
       setupClient();

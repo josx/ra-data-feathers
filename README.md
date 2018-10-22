@@ -12,21 +12,21 @@ If you are searching for admin-on-rest (older react-admin version), please use [
 ra-data-feathers currently supports the following request types. More information on react-admin request types is available for [data providers](https://marmelab.com/react-admin/DataProviders.html#request-format) and [auth providers](https://marmelab.com/react-admin/Authorization.html) in the react-admin documentation.
 
 * **Data Provider**
-  * GET_LIST
-  * GET_ONE
-  * CREATE
-  * UPDATE
-  * DELETE
-  * DELETE_MANY
-  * GET_MANY
-  * GET_MANY_REFERENCE
+	* GET_LIST
+	* GET_ONE
+	* CREATE
+	* UPDATE
+	* UPDATE_MANY
+	* DELETE
+	* DELETE_MANY
+	* GET_MANY
+	* GET_MANY_REFERENCE
 * **Auth Provider**
-  * AUTH_LOGIN
-  * AUTH_LOGOUT
-  * AUTH_CHECK
-  * AUTH_ERROR
-  * AUTH_GET_PERMISSIONS
-> Note that the data provider request type UPDATE_MANY is not yet supported.
+	* AUTH_LOGIN
+	* AUTH_LOGOUT
+	* AUTH_CHECK
+	* AUTH_ERROR
+	* AUTH_GET_PERMISSIONS
 
 ## Installation
 

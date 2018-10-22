@@ -5,6 +5,7 @@ import {
   GET_ONE,
   CREATE,
   UPDATE,
+  UPDATE_MANY,
   DELETE,
   DELETE_MANY,
   fetchUtils
@@ -60,6 +61,12 @@ export default (client, options = {}) => {
           return service.patch(params.id, data)
         }
         return service.update(params.id, params.data)
+      case UPDATE_MANY:
+        if (usePatch) {
+          const data = params.previousData ? diff(params.previousData, params.data) : params.data
+          return Promise.all(params.ids.map(id => (service.patch(id, data))));
+        }
+        return Promise.all(params.ids.map(id => (service.update(id, params.data))));
       case CREATE:
         return service.create(params.data)
       case DELETE:
@@ -78,6 +85,7 @@ export default (client, options = {}) => {
       case UPDATE:
       case DELETE:
         return {data: {...response, id: response[idKey]}}
+      case UPDATE_MANY:
       case DELETE_MANY:
         return {data: response.map(record => record[idKey])}
       case CREATE:
