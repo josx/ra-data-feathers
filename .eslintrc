@@ -2,5 +2,8 @@
   "env": {
     "node": true
   },
-  "extends": "airbnb",
+  "extends": "airbnb-base",
+  "parserOptions": {
+    "sourceType": "module"
+  }
 }
