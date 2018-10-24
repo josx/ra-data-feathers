@@ -127,7 +127,9 @@ describe('Rest Client', function () {
       const query = {
         $limit: 20,
         $skip: 20 * 9,
-        '$sort[id]': '-1',
+        $sort: {
+          id: -1
+        },
         name: 'john',
         _userId: '1'
       };
@@ -177,7 +179,9 @@ describe('Rest Client', function () {
       const query = {
         $limit: 20,
         $skip: 20 * 9,
-        '$sort[id]': '-1',
+        $sort: {
+          id: -1
+        },
         name: 'john',
         'address.city': 'London'
       };
@@ -222,7 +226,9 @@ describe('Rest Client', function () {
       const query = {
         $limit: 20,
         $skip: 20 * 9,
-        '$sort[_id]': '-1',
+        $sort: {
+          _id: -1
+        },
         name: 'john'
       };
       return asyncResult.then(result => {
@@ -266,7 +272,9 @@ describe('Rest Client', function () {
       const query = {
         $limit: 20,
         $skip: 20 * 9,
-        '$sort[_id]': '-1',
+        $sort: {
+          _id: -1
+        },
         name: 'john'
       };
       return asyncResult.then(result => {
@@ -294,7 +302,9 @@ describe('Rest Client', function () {
       const query = {
         $limit: 20,
         $skip: 20 * 9,
-        '$sort[id]': '-1',
+        $sort: {
+          id: -1
+        },
         name: 'john'
       };
       return asyncResult.then(result => {
