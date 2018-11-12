@@ -40,15 +40,15 @@ export default (client, options = {}) => {
       case GET_LIST:
         const { page, perPage } = params.pagination || {};
         const { field, order } = params.sort || {};
-        const sortKey = `$sort[${field === 'id' ? idKey : field}]`;
-        dbg('field=%o, sort-key=%o', field, sortKey);
-        const sortVal = order === 'DESC' ? -1 : 1;
+        dbg('field=%o, order=%o', field, order);
         if (perPage && page) {
           query.$limit = perPage;
           query.$skip = perPage * (page - 1);
         }
         if (order) {
-          query[sortKey] = JSON.stringify(sortVal);
+          query.$sort = {
+            [field === 'id' ? idKey : field]: order === 'DESC' ? -1 : 1,
+          };
         }
         Object.assign(query, fetchUtils.flattenObject(params.filter));
         dbg('query=%o', query);
