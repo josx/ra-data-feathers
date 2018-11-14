@@ -1,0 +1,30 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": "airbnb-base",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  globals: {
+    "after": true,
+    "afterEach": true,
+    "before": true,
+    "beforeEach": true,
+    "describe": true,
+    "expect": true,
+    "it": true,
+    "localStorage": true
+  },
+  "rules": {
+    "consistent-return": "warn",
+    "implicit-arrow-linebreak": "warn",
+    "func-names": "off",
+    "no-case-declarations": "off",
+    "no-fallthrough": "warn",
+    "no-unused-expressions": "warn",
+    "prefer-arrow-callback": "off",
+    "prefer-promise-reject-errors": "warn"
+  }
+}
