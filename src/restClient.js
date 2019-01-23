@@ -8,7 +8,6 @@ import {
   UPDATE_MANY,
   DELETE,
   DELETE_MANY,
-  fetchUtils,
 } from 'react-admin';
 import debug from 'debug';
 import diff from 'object-diff';
@@ -50,7 +49,7 @@ export default (client, options = {}) => {
             [field === 'id' ? idKey : field]: order === 'DESC' ? -1 : 1,
           };
         }
-        Object.assign(query, fetchUtils.flattenObject(params.filter));
+        Object.assign(query, params.filter);
         dbg('query=%o', query);
         return service.find({ query });
       case GET_ONE:
