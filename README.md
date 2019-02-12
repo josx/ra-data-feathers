@@ -55,7 +55,7 @@ Configuration of the Feathers client is beyond the scope of this document. See t
 ### Data Provider (restClient)
 The ra-data-feathers data provider (restClient) accepts two arguments: `client` and `options`.
 
-`client`should be a [configured Feathers client instance](#Feathers-Client). This argument is required. 
+`client`should be a [configured Feathers client instance](#Feathers-Client). This argument is required.
 
 `options` contains configurable options for the ra-data-feathers restClient. The `options` argument is optional and can be omitted. In this case, defaults will be used.
 ```
@@ -71,7 +71,7 @@ const options = {
 ### Auth Provider (authClient)
 `authClient` also accepts two parameters. `client` and `options`.
 
-`client`should be a [configured Feathers client instance](#Feathers-Client). This argument is required. 
+`client`should be a [configured Feathers client instance](#Feathers-Client). This argument is required.
 
 `options` contains configurable options for the ra-data-feathers authClient. The `options` argument is optional and can be omitted. In this case, defaults shown below will be used.
 
@@ -85,7 +85,7 @@ const options = {
   permissionsField: 'roles', // The key in the decoded JWT containing the user's role
   passwordField: 'password', // The key used to provide the password to Feathers client.authenticate
   usernameField: 'email', // The key used to provide the username to Feathers client.authenticate
-  redirectTo: '/login', // Redirect to this path if an AUTH_CHECK fails. Uses the react-admin default of '/login' if omitted. 
+  redirectTo: '/login', // Redirect to this path if an AUTH_CHECK fails. Uses the react-admin default of '/login' if omitted.
 }
 ```
 
