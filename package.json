@@ -1,6 +1,6 @@
 {
   "name": "ra-data-feathers",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "A feathers client for react-admin",
   "main": "lib/index.js",
   "scripts": {
