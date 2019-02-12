@@ -1,5 +1,36 @@
 # Change Log
 
+## [v2.0.8](https://github.com/josx/ra-data-feathers/tree/v2.0.8) (2019-02-12)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.7...v2.0.8)
+
+**Closed issues:**
+
+- Use only a single package manager [\#96](https://github.com/josx/ra-data-feathers/issues/96)
+- ReferenceField is sending wrong request [\#92](https://github.com/josx/ra-data-feathers/issues/92)
+- Nested query filter support is now broken [\#90](https://github.com/josx/ra-data-feathers/issues/90)
+- Column doesn't exist. [\#89](https://github.com/josx/ra-data-feathers/issues/89)
+- Fix yarn issue for codeship [\#88](https://github.com/josx/ra-data-feathers/issues/88)
+- Support for feathers v3? [\#86](https://github.com/josx/ra-data-feathers/issues/86)
+- Bugfix: $sort field set incorrectly in GET\_LIST handler [\#84](https://github.com/josx/ra-data-feathers/issues/84)
+- Possible Improvement: Code Style [\#79](https://github.com/josx/ra-data-feathers/issues/79)
+- improve indentation of code in readme [\#77](https://github.com/josx/ra-data-feathers/issues/77)
+- Support UPDATE\_MANY [\#76](https://github.com/josx/ra-data-feathers/issues/76)
+- Improve Documentation [\#74](https://github.com/josx/ra-data-feathers/issues/74)
+- Suggestion: Change package name to reflect upgrade from AOR to RA [\#71](https://github.com/josx/ra-data-feathers/issues/71)
+- Add redirectTo option to readme [\#70](https://github.com/josx/ra-data-feathers/issues/70)
+
+**Merged pull requests:**
+
+- Avoid two lock file, just using yarn [\#97](https://github.com/josx/ra-data-feathers/pull/97) ([josx](https://github.com/josx))
+- Update Node version in CircleCI config [\#95](https://github.com/josx/ra-data-feathers/pull/95) ([nicholasnelson](https://github.com/nicholasnelson))
+- Fix Nested Queries in GET\_LIST [\#94](https://github.com/josx/ra-data-feathers/pull/94) ([nicholasnelson](https://github.com/nicholasnelson))
+- Fix formatting of query.$sort [\#85](https://github.com/josx/ra-data-feathers/pull/85) ([nicholasnelson](https://github.com/nicholasnelson))
+- \#79 code style improvement [\#82](https://github.com/josx/ra-data-feathers/pull/82) ([sgobotta](https://github.com/sgobotta))
+- Add tests and code for UPDATE\_MANY method [\#80](https://github.com/josx/ra-data-feathers/pull/80) ([nicholasnelson](https://github.com/nicholasnelson))
+- Improve Indentation in README.md [\#78](https://github.com/josx/ra-data-feathers/pull/78) ([nicholasnelson](https://github.com/nicholasnelson))
+- RR: Update README.md [\#75](https://github.com/josx/ra-data-feathers/pull/75) ([nicholasnelson](https://github.com/nicholasnelson))
+- Add basic documentation of redirectTo option [\#73](https://github.com/josx/ra-data-feathers/pull/73) ([nicholasnelson](https://github.com/nicholasnelson))
+
 ## [v2.0.7](https://github.com/josx/ra-data-feathers/tree/v2.0.7) (2018-09-26)
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.6...v2.0.7)
 
