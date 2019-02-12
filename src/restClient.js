@@ -50,7 +50,7 @@ export default (client, options = {}) => {
             [field === 'id' ? idKey : field]: order === 'DESC' ? -1 : 1,
           };
         }
-        Object.assign(query, fetchUtils.flattenObject(params.filter));
+        Object.assign(query, params.filter);
         dbg('query=%o', query);
         return service.find({ query });
       case GET_ONE:
