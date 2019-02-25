@@ -18,7 +18,7 @@ export default (client, options = {}) => (type, params) => {
     redirectTo,
   } = Object.assign({}, {
     storageKey: 'token',
-    authenticate: { type: 'local' },
+    authenticate: { strategy: 'local' },
     permissionsKey: 'permissions',
     permissionsField: 'roles',
     passwordField: 'password',
