@@ -72,6 +72,15 @@ export default (client, options = {}) => {
       case DELETE:
         return service.remove(params.id);
       case DELETE_MANY:
+        if (service.options.multi) {
+          return service.remove(null, {
+            query: {
+              [idKey]: {
+                $in: params.ids,
+              },
+            },
+          });
+        }
         return Promise.all(params.ids.map(id => (service.remove(id))));
       default:
         return Promise.reject(`Unsupported FeathersJS restClient action type ${type}`);
