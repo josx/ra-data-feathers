@@ -35,7 +35,6 @@ let aorClient;
 let fakeClient;
 let fakeService;
 
-
 function setupClient(options = {}) {
   const { multi } = options || false;
   fakeService = {

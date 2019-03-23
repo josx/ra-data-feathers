@@ -67,6 +67,7 @@ const options = {
   },
 }
 ```
+`Performant Bulk Actions` can be used by enabling multi options in the feathers application
 
 ### Auth Provider (authClient)
 `authClient` also accepts two parameters. `client` and `options`.
