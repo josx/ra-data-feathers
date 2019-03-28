@@ -14,7 +14,7 @@ import {
 const { expect } = require('chai');
 const sinon = require('sinon');
 const debug = require('debug');
-const { restClient } = require('../lib');
+const { restClient } = require('../src');
 
 debug('ra-data-feathers:test');
 
@@ -28,6 +28,7 @@ const getResult = { id: 1, title: 'gotten' };
 const updateResult = { id: 1, title: 'updated' };
 const createResult = { id: 1, title: 'created' };
 const removeResult = { id: 1, title: 'deleted' };
+const removeManyResult = [{ id: 1 }, { id: 2 }];
 const authenticateResult = {};
 
 let aorClient;
@@ -35,6 +36,7 @@ let fakeClient;
 let fakeService;
 
 function setupClient(options = {}) {
+  const { multi } = options || false;
   fakeService = {
     find: sinon.stub().returns(Promise.resolve(findResult)),
     get: sinon.stub().returns(Promise.resolve(getResult)),
@@ -45,7 +47,10 @@ function setupClient(options = {}) {
       Object.assign({}, data, { id }),
     )),
     create: sinon.stub().returns(Promise.resolve(createResult)),
-    remove: sinon.stub().returns(Promise.resolve(removeResult)),
+    remove: multi
+      ? sinon.stub().returns(Promise.resolve(removeManyResult))
+      : sinon.stub().returns(Promise.resolve(removeResult)),
+    options,
   };
 
   // sinon.spy(fakeService.find)
@@ -467,21 +472,26 @@ describe('Rest Client', function () {
   describe('when called with DELETE_MANY', function () {
     const params = { ids: [1, 2] };
     beforeEach(function () {
-      setupClient();
+      setupClient({ multi: true });
       asyncResult = aorClient(DELETE_MANY, 'posts', params);
     });
 
-    it("calls the client's remove method twice with the ids in params", function () {
+    it("calls the client's remove method once with the ids in params", function () {
       return asyncResult.then(() => {
-        expect(fakeService.remove.calledTwice).to.be.true;
-        expect(fakeService.remove.firstCall.calledWith(1));
-        expect(fakeService.remove.secondCall.calledWith(2));
+        expect(fakeService.remove.calledOnce).to.be.true;
+        expect(fakeService.remove.firstCall.calledWith({
+          query: {
+            id: {
+              $in: [1, 2],
+            },
+          },
+        }));
       });
     });
 
     it('returns the ids of the records returned by the client', function () {
       return asyncResult.then((result) => {
-        expect(result).to.deep.equal({ data: [removeResult.id, removeResult.id] });
+        expect(result).to.deep.equal({ data: removeManyResult.map(record => record.id) });
       });
     });
   });
