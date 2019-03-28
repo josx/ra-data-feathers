@@ -8,7 +8,6 @@ import {
   UPDATE_MANY,
   DELETE,
   DELETE_MANY,
-  fetchUtils,
 } from 'react-admin';
 import debug from 'debug';
 import diff from 'object-diff';
