@@ -20,6 +20,12 @@ function getIdKey({ resource, options }) {
   return (options[resource] && options[resource].id) || options.id || defaultIdKey;
 }
 
+function deleteProp(obj, prop) {
+  let res = Object.assign({}, obj);
+  delete res[prop];
+  return res;
+}
+
 export default (client, options = {}) => {
   const usePatch = !!options.usePatch;
   const mapRequest = (type, resource, params) => {
@@ -60,14 +66,18 @@ export default (client, options = {}) => {
         if (usePatch) {
           const data = params.previousData ? diff(params.previousData, params.data) : params.data;
           return service.patch(params.id, data);
+        } else {
+          const data = (idKey !== defaultIdKey) ? deleteProp(params.data, defaultIdKey) : params.data
+          return service.update(params.id, data);
         }
-        return service.update(params.id, params.data);
       case UPDATE_MANY:
         if (usePatch) {
           const data = params.previousData ? diff(params.previousData, params.data) : params.data;
           return Promise.all(params.ids.map(id => (service.patch(id, data))));
+        } else {
+          const data = (idKey !== defaultIdKey) ? deleteProp(params.data, defaultIdKey) : params.data
+          return Promise.all(params.ids.map(id => (service.update(id, data))));
         }
-        return Promise.all(params.ids.map(id => (service.update(id, params.data))));
       case CREATE:
         return service.create(params.data);
       case DELETE:
