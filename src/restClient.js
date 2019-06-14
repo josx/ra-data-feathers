@@ -101,7 +101,15 @@ export default (client, options = {}) => {
       case GET_MANY_REFERENCE: // fix GET_MANY_REFERENCE missing id
       case GET_MANY: // fix GET_MANY missing id
       case GET_LIST:
-        response.data = response.data.map((_item) => {
+        let res;
+        // support paginated and non paginated services
+        if(!response.data) {
+          response.total = response.length;
+          res = response;
+        } else {
+          res = response.data;
+        }
+        response.data = res.map((_item) => {
           const item = _item;
           if (idKey !== 'id') {
             item.id = _item[idKey];
