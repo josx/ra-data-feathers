@@ -14,8 +14,10 @@ import diff from 'object-diff';
 
 const dbg = debug('ra-data-feathers:rest-client');
 
+const defaultIdKey = 'id'
+
 function getIdKey({ resource, options }) {
-  return (options[resource] && options[resource].id) || options.id || 'id';
+  return (options[resource] && options[resource].id) || options.id || defaultIdKey;
 }
 
 export default (client, options = {}) => {
@@ -46,7 +48,7 @@ export default (client, options = {}) => {
         }
         if (order) {
           query.$sort = {
-            [field === 'id' ? idKey : field]: order === 'DESC' ? -1 : 1,
+            [field === defaultIdKey ? idKey : field]: order === 'DESC' ? -1 : 1,
           };
         }
         Object.assign(query, params.filter);
@@ -103,7 +105,7 @@ export default (client, options = {}) => {
       case GET_LIST:
         response.data = response.data.map((_item) => {
           const item = _item;
-          if (idKey !== 'id') {
+          if (idKey !== defaultIdKey) {
             item.id = _item[idKey];
           }
           return _item;
