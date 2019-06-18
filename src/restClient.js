@@ -14,8 +14,16 @@ import diff from 'object-diff';
 
 const dbg = debug('ra-data-feathers:rest-client');
 
+const defaultIdKey = 'id'
+
 function getIdKey({ resource, options }) {
-  return (options[resource] && options[resource].id) || options.id || 'id';
+  return (options[resource] && options[resource].id) || options.id || defaultIdKey;
+}
+
+function deleteProp(obj, prop) {
+  let res = Object.assign({}, obj);
+  delete res[prop];
+  return res;
 }
 
 export default (client, options = {}) => {
@@ -46,7 +54,7 @@ export default (client, options = {}) => {
         }
         if (order) {
           query.$sort = {
-            [field === 'id' ? idKey : field]: order === 'DESC' ? -1 : 1,
+            [field === defaultIdKey ? idKey : field]: order === 'DESC' ? -1 : 1,
           };
         }
         Object.assign(query, params.filter);
@@ -58,14 +66,18 @@ export default (client, options = {}) => {
         if (usePatch) {
           const data = params.previousData ? diff(params.previousData, params.data) : params.data;
           return service.patch(params.id, data);
+        } else {
+          const data = (idKey !== defaultIdKey) ? deleteProp(params.data, defaultIdKey) : params.data
+          return service.update(params.id, data);
         }
-        return service.update(params.id, params.data);
       case UPDATE_MANY:
         if (usePatch) {
           const data = params.previousData ? diff(params.previousData, params.data) : params.data;
           return Promise.all(params.ids.map(id => (service.patch(id, data))));
+        } else {
+          const data = (idKey !== defaultIdKey) ? deleteProp(params.data, defaultIdKey) : params.data
+          return Promise.all(params.ids.map(id => (service.update(id, data))));
         }
-        return Promise.all(params.ids.map(id => (service.update(id, params.data))));
       case CREATE:
         return service.create(params.data);
       case DELETE:
@@ -103,7 +115,7 @@ export default (client, options = {}) => {
       case GET_LIST:
         response.data = response.data.map((_item) => {
           const item = _item;
-          if (idKey !== 'id') {
+          if (idKey !== defaultIdKey) {
             item.id = _item[idKey];
           }
           return _item;
