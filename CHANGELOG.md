@@ -1,5 +1,22 @@
 # Change Log
 
+## [v2.1.0](https://github.com/josx/ra-data-feathers/tree/v2.1.0) (2019-06-21)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.8...v2.1.0)
+
+**Closed issues:**
+
+- id property in put request payload [\#102](https://github.com/josx/ra-data-feathers/issues/102)
+- Working with non-paginated feathers services [\#101](https://github.com/josx/ra-data-feathers/issues/101)
+- Improvement: Performant bulk-actions [\#81](https://github.com/josx/ra-data-feathers/issues/81)
+
+**Merged pull requests:**
+
+- Bump stringstream from 0.0.5 to 0.0.6 [\#105](https://github.com/josx/ra-data-feathers/pull/105) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Support non paginated services [\#104](https://github.com/josx/ra-data-feathers/pull/104) ([josx](https://github.com/josx))
+- Remove id prop [\#103](https://github.com/josx/ra-data-feathers/pull/103) ([josx](https://github.com/josx))
+- Issue \#81 Performant bulk actions [\#100](https://github.com/josx/ra-data-feathers/pull/100) ([taylorgoodallau](https://github.com/taylorgoodallau))
+- Correct default authenticate field name [\#99](https://github.com/josx/ra-data-feathers/pull/99) ([nhkhanh](https://github.com/nhkhanh))
+
 ## [v2.0.8](https://github.com/josx/ra-data-feathers/tree/v2.0.8) (2019-02-12)
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.7...v2.0.8)
 
