@@ -87,6 +87,7 @@ const options = {
   passwordField: 'password', // The key used to provide the password to Feathers client.authenticate
   usernameField: 'email', // The key used to provide the username to Feathers client.authenticate
   redirectTo: '/login', // Redirect to this path if an AUTH_CHECK fails. Uses the react-admin default of '/login' if omitted.
+  logoutOnForbidden: true, // Logout when response status code is 403
 }
 ```
 

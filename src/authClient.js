@@ -16,6 +16,7 @@ export default (client, options = {}) => (type, params) => {
     passwordField,
     usernameField,
     redirectTo,
+    logoutOnForbidden,
   } = Object.assign({}, {
     storageKey: 'token',
     authenticate: { strategy: 'local' },
@@ -23,6 +24,7 @@ export default (client, options = {}) => (type, params) => {
     permissionsField: 'roles',
     passwordField: 'password',
     usernameField: 'email',
+    logoutOnForbidden: true,
   }, options);
 
   switch (type) {
@@ -40,7 +42,7 @@ export default (client, options = {}) => (type, params) => {
       return localStorage.getItem(storageKey) ? Promise.resolve() : Promise.reject({ redirectTo });
     case AUTH_ERROR:
       const { code } = params;
-      if (code === 401 || code === 403) {
+      if (code === 401 || (logoutOnForbidden && code === 403)) {
         localStorage.removeItem(storageKey);
         localStorage.removeItem(permissionsKey);
         return Promise.reject();
@@ -48,7 +50,7 @@ export default (client, options = {}) => (type, params) => {
       return Promise.resolve();
     case AUTH_GET_PERMISSIONS:
       /*
-      JWT token may be providen by oauth,
+      JWT token may be provided by oauth,
       so that's why the permissions are decoded here and not in AUTH_LOGIN.
       */
       // Get the permissions from localstorage if any.

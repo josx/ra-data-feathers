@@ -90,4 +90,32 @@ describe('Auth Client', function () {
       }
     });
   });
+
+  describe('when logoutOnForbidden is set', () => {
+    beforeEach(function () {
+      setupClient();
+    });
+
+    before(function () {
+      global.localStorage = {
+        removeItem: sinon.stub(),
+      };
+    });
+
+    after(function () {
+      delete global.localStorage;
+    });
+
+    it('should throw when true', function () {
+      return expect(authClient('AUTH_ERROR', { code: 403 })).to
+        .be.rejected;
+    });
+
+    it('should not throw when false', function () {
+      const testOptions = Object.assign({}, options, { logoutOnForbidden: false });
+      setupClient(testOptions);
+      return expect(authClient('AUTH_ERROR', { code: 403 })).to
+        .be.fulfilled;
+    });
+  });
 });
