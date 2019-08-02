@@ -1,5 +1,18 @@
 # Change Log
 
+## [v2.2.1](https://github.com/josx/ra-data-feathers/tree/v2.2.1) (2019-08-02)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.2.0...v2.2.1)
+
+**Merged pull requests:**
+
+- Bump diff from 3.2.0 to 3.5.0 [\#119](https://github.com/josx/ra-data-feathers/pull/119) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump js-yaml from 3.9.0 to 3.13.1 [\#118](https://github.com/josx/ra-data-feathers/pull/118) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump fstream from 1.0.11 to 1.0.12 [\#117](https://github.com/josx/ra-data-feathers/pull/117) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump react-dom from 16.4.1 to 16.4.2 [\#116](https://github.com/josx/ra-data-feathers/pull/116) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump sshpk from 1.13.0 to 1.16.1 [\#115](https://github.com/josx/ra-data-feathers/pull/115) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump extend from 3.0.1 to 3.0.2 [\#114](https://github.com/josx/ra-data-feathers/pull/114) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump tough-cookie from 2.3.2 to 2.3.4 [\#113](https://github.com/josx/ra-data-feathers/pull/113) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v2.2.0](https://github.com/josx/ra-data-feathers/tree/v2.2.0) (2019-08-02)
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.1.0...v2.2.0)
 
