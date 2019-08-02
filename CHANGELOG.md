@@ -1,5 +1,20 @@
 # Change Log
 
+## [v2.2.0](https://github.com/josx/ra-data-feathers/tree/v2.2.0) (2019-08-02)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.1.0...v2.2.0)
+
+**Closed issues:**
+
+- Logging out on 403 errors [\#111](https://github.com/josx/ra-data-feathers/issues/111)
+- Missing Authorization headers after login success [\#107](https://github.com/josx/ra-data-feathers/issues/107)
+
+**Merged pull requests:**
+
+- Add option to logout on forbidden response code [\#112](https://github.com/josx/ra-data-feathers/pull/112) ([TheHyphen](https://github.com/TheHyphen))
+- Bump lodash from 4.17.4 to 4.17.15 [\#109](https://github.com/josx/ra-data-feathers/pull/109) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump lodash-es from 4.17.4 to 4.17.14 [\#108](https://github.com/josx/ra-data-feathers/pull/108) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump handlebars from 4.0.12 to 4.1.2 [\#106](https://github.com/josx/ra-data-feathers/pull/106) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v2.1.0](https://github.com/josx/ra-data-feathers/tree/v2.1.0) (2019-06-21)
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.8...v2.1.0)
 
