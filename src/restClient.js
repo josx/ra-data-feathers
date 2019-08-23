@@ -14,6 +14,8 @@ import diff from 'object-diff';
 
 const dbg = debug('ra-data-feathers:rest-client');
 
+const { paramsForServer } = require('feathers-hooks-common');
+
 const defaultIdKey = 'id'
 
 function getIdKey({ resource, options }) {
@@ -28,6 +30,13 @@ function deleteProp(obj, prop) {
 
 export default (client, options = {}) => {
   const usePatch = !!options.usePatch;
+  const softDelete = !!options.softDelete;
+  const serverParams = function () {
+    if (softDelete) {
+      return paramsForServer({ $ignoreDeletedAt: true });
+    }
+    return null;
+  };
   const mapRequest = (type, resource, params) => {
     const idKey = getIdKey({ resource, options });
     dbg('type=%o, resource=%o, params=%o, idKey=%o', type, resource, params, idKey);
@@ -65,18 +74,18 @@ export default (client, options = {}) => {
       case UPDATE:
         if (usePatch) {
           const data = params.previousData ? diff(params.previousData, params.data) : params.data;
-          return service.patch(params.id, data);
+          return service.patch(params.id, data, serverParams());
         } else {
           const data = (idKey !== defaultIdKey) ? deleteProp(params.data, defaultIdKey) : params.data
-          return service.update(params.id, data);
+          return service.update(params.id, data, serverParams());
         }
       case UPDATE_MANY:
         if (usePatch) {
           const data = params.previousData ? diff(params.previousData, params.data) : params.data;
-          return Promise.all(params.ids.map(id => (service.patch(id, data))));
+          return Promise.all(params.ids.map(id => (service.patch(id, data, serverParams()))));
         } else {
           const data = (idKey !== defaultIdKey) ? deleteProp(params.data, defaultIdKey) : params.data
-          return Promise.all(params.ids.map(id => (service.update(id, data))));
+          return Promise.all(params.ids.map(id => (service.update(id, data, serverParams()))));
         }
       case CREATE:
         return service.create(params.data);
