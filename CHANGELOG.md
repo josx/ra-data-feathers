@@ -1,5 +1,18 @@
 # Change Log
 
+## [v2.3.0](https://github.com/josx/ra-data-feathers/tree/v2.3.0) (2019-09-02)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.2.1...v2.3.0)
+
+**Closed issues:**
+
+- softDelete and react-admin, how do I send extra params to the api during update requests [\#120](https://github.com/josx/ra-data-feathers/issues/120)
+- Consolidated place to discuss the 'call authenticate on every request' related changes [\#98](https://github.com/josx/ra-data-feathers/issues/98)
+
+**Merged pull requests:**
+
+- Bump eslint-utils from 1.3.1 to 1.4.2 [\#122](https://github.com/josx/ra-data-feathers/pull/122) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Adds softDelete as an option. If true, adds $ignoreDeletedAt: true to… [\#121](https://github.com/josx/ra-data-feathers/pull/121) ([DanStorm](https://github.com/DanStorm))
+
 ## [v2.2.1](https://github.com/josx/ra-data-feathers/tree/v2.2.1) (2019-08-02)
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.2.0...v2.2.1)
 
