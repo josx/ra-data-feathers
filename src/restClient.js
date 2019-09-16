@@ -31,11 +31,21 @@ function deleteProp(obj, prop) {
 export default (client, options = {}) => {
   const usePatch = !!options.usePatch;
   const softDelete = !!options.softDelete;
-  const serverParams = function () {
-    if (softDelete) {
+  var serverParams = function (query) {
+    if(softDelete) {
+      // slightly different structure for find method
+      if(query) {
+        return paramsForServer({ query: query, $ignoreDeletedAt: true});
+      }
       return paramsForServer({ $ignoreDeletedAt: true });
     }
-    return null;
+    else {
+      if(query) {
+        return ({query})
+      }
+      return null;
+
+    }
   };
   const mapRequest = (type, resource, params) => {
     const idKey = getIdKey({ resource, options });
@@ -48,7 +58,7 @@ export default (client, options = {}) => {
         const ids = params.ids || [];
         query[idKey] = { $in: ids };
         query.$limit = ids.length;
-        return service.find({ query });
+        return service.find(serverParams(query));
       case GET_MANY_REFERENCE:
         if (params.target && params.id) {
           query[params.target] = params.id;
@@ -68,9 +78,9 @@ export default (client, options = {}) => {
         }
         Object.assign(query, params.filter);
         dbg('query=%o', query);
-        return service.find({ query });
+        return service.find(serverParams(query));
       case GET_ONE:
-        return service.get(params.id);
+        return service.get(params.id, serverParams());
       case UPDATE:
         if (usePatch) {
           const data = params.previousData ? diff(params.previousData, params.data) : params.data;
