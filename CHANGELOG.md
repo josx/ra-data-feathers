@@ -1,5 +1,17 @@
 # Change Log
 
+## [v2.4.0](https://github.com/josx/ra-data-feathers/tree/v2.4.0) (2019-09-18)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.3.0...v2.4.0)
+
+**Closed issues:**
+
+- ra-data-feathers doesn't work with feathers v4 [\#124](https://github.com/josx/ra-data-feathers/issues/124)
+- upgrade feathers-client to v4 [\#123](https://github.com/josx/ra-data-feathers/issues/123)
+
+**Merged pull requests:**
+
+- Undo softDelete option and support v4 [\#125](https://github.com/josx/ra-data-feathers/pull/125) ([vonagam](https://github.com/vonagam))
+
 ## [v2.3.0](https://github.com/josx/ra-data-feathers/tree/v2.3.0) (2019-09-02)
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.2.1...v2.3.0)
 
