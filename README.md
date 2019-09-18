@@ -36,12 +36,6 @@ In your react-admin app just add ra-data-feathers dependency:
 npm install ra-data-feathers --save
 ```
 
-or
-
-```sh
-yarn add ra-data-feathers
-```
-
 ## Usage
 
 ### Feathers Client
