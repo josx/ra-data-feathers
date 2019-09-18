@@ -62,7 +62,6 @@ The ra-data-feathers data provider (restClient) accepts two arguments: `client` 
 const options = {
   id: 'id', // If your database uses an id field other than 'id'. Optional.
   usePatch: false, // Use PATCH instead of PUT for UPDATE requests. Optional.
-	softDelete: false, // for use with Feathers-Plus softDelete2, setting this option to true passes `$ignoreDeletedAt: true` to your feathers client in PATCH, UPDATE or UPDATE_MANY requests. https://feathers-plus.github.io/v1/feathers-hooks-common/index.html#softdelete2
   my_resource: { // Options for individual resources can be set by adding an object with the same name. Optional.
     id: 'id', // If this specific table uses an id field other than 'id'. Optional.
   },
