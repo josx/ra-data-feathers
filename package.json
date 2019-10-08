@@ -46,7 +46,6 @@
     "@feathersjs/client": "^3.5.3 || ^4.3.0"
   },
   "dependencies": {
-    "chai-as-promised": "^7.1.1",
     "debug": "^3.0.0",
     "jwt-decode": "^2.2.0",
     "object-diff": "^0.0.4"
@@ -59,6 +58,7 @@
     "babel-preset-stage-0": "^6.16.0",
     "babel-register": "^6.26.0",
     "chai": "^3.5.0",
+    "chai-as-promised": "^7.1.1",
     "eslint": "^5.7.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
