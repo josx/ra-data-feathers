@@ -1,5 +1,16 @@
 # Change Log
 
+## [v2.4.1](https://github.com/josx/ra-data-feathers/tree/v2.4.1) (2019-10-28)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.4.0...v2.4.1)
+
+**Closed issues:**
+
+- Socketio [\#128](https://github.com/josx/ra-data-feathers/issues/128)
+
+**Merged pull requests:**
+
+- Move chai-as-promised to devDependencies [\#129](https://github.com/josx/ra-data-feathers/pull/129) ([vonagam](https://github.com/vonagam))
+
 ## [v2.4.0](https://github.com/josx/ra-data-feathers/tree/v2.4.0) (2019-09-18)
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.3.0...v2.4.0)
 
