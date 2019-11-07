@@ -70,6 +70,28 @@ describe('Auth Client', function () {
         return expect(authClient('AUTH_CHECK', {})).to.be.fulfilled;
       });
     });
+
+    describe('when client.reAuthenticate() is available', function () {
+      before(function () {
+        global.localStorage = {
+          getItem: sinon.stub().returns('somedata'),
+        };
+      });
+      after(function () {
+        delete global.localStorage;
+      });
+
+      it('should call client.reAuthenticate if is a function', function () {
+        const customClient = {
+          reAuthenticate: sinon.stub().returns(new Promise(() => {})),
+        };
+
+        const customAuthClient = aorAuthClient(customClient, options);
+
+        customAuthClient('AUTH_CHECK', {});
+        return expect(customClient.reAuthenticate.called);
+      });
+    });
   });
 
   describe('when called with an invalid type', function () {

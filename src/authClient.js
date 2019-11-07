@@ -39,7 +39,19 @@ export default (client, options = {}) => (type, params) => {
       localStorage.removeItem(permissionsKey);
       return client.logout();
     case AUTH_CHECK:
-      return localStorage.getItem(storageKey) ? Promise.resolve() : Promise.reject({ redirectTo });
+      const hasJwtInStorage = !!localStorage.getItem(storageKey);
+      const hasReAuthenticate =
+        Object.getOwnPropertyNames(client).includes('reAuthenticate') &&
+        typeof client.reAuthenticate === 'function';
+
+      if (hasJwtInStorage && hasReAuthenticate) {
+        return client
+          .reAuthenticate()
+          .then(() => Promise.resolve())
+          .catch(() => Promise.reject({ redirectTo }));
+      }
+
+      return hasJwtInStorage ? Promise.resolve() : Promise.reject({ redirectTo });
     case AUTH_ERROR:
       const { code } = params;
       if (code === 401 || (logoutOnForbidden && code === 403)) {
