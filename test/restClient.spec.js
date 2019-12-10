@@ -193,7 +193,7 @@ describe('Rest Client', function () {
         name: 'john',
         address: {
           city: 'London',
-        }
+        },
       };
       return asyncResult.then(() => {
         expect(fakeService.find.calledWith({

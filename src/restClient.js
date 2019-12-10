@@ -14,14 +14,14 @@ import diff from 'object-diff';
 
 const dbg = debug('ra-data-feathers:rest-client');
 
-const defaultIdKey = 'id'
+const defaultIdKey = 'id';
 
 function getIdKey({ resource, options }) {
   return (options[resource] && options[resource].id) || options.id || defaultIdKey;
 }
 
 function deleteProp(obj, prop) {
-  let res = Object.assign({}, obj);
+  const res = Object.assign({}, obj);
   delete res[prop];
   return res;
 }
@@ -66,18 +66,21 @@ export default (client, options = {}) => {
         if (usePatch) {
           const data = params.previousData ? diff(params.previousData, params.data) : params.data;
           return service.patch(params.id, data);
-        } else {
-          const data = (idKey !== defaultIdKey) ? deleteProp(params.data, defaultIdKey) : params.data
-          return service.update(params.id, data);
         }
+        const data = (idKey !== defaultIdKey)
+          ? deleteProp(params.data, defaultIdKey) : params.data;
+        return service.update(params.id, data);
+
       case UPDATE_MANY:
         if (usePatch) {
-          const data = params.previousData ? diff(params.previousData, params.data) : params.data;
-          return Promise.all(params.ids.map(id => (service.patch(id, data))));
-        } else {
-          const data = (idKey !== defaultIdKey) ? deleteProp(params.data, defaultIdKey) : params.data
-          return Promise.all(params.ids.map(id => (service.update(id, data))));
+          const dataPatch = params.previousData
+            ? diff(params.previousData, params.data) : params.data;
+          return Promise.all(params.ids.map(id => (service.patch(id, dataPatch))));
         }
+        const dataUpdate = (idKey !== defaultIdKey)
+          ? deleteProp(params.data, defaultIdKey) : params.data;
+        return Promise.all(params.ids.map(id => (service.update(id, dataUpdate))));
+
       case CREATE:
         return service.create(params.data);
       case DELETE:
@@ -115,7 +118,7 @@ export default (client, options = {}) => {
       case GET_LIST:
         let res;
         // support paginated and non paginated services
-        if(!response.data) {
+        if (!response.data) {
           response.total = response.length;
           res = response;
         } else {
