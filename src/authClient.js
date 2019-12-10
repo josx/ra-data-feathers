@@ -40,9 +40,8 @@ export default (client, options = {}) => (type, params) => {
       return client.logout();
     case AUTH_CHECK:
       const hasJwtInStorage = !!localStorage.getItem(storageKey);
-      const hasReAuthenticate =
-        Object.getOwnPropertyNames(client).includes('reAuthenticate') &&
-        typeof client.reAuthenticate === 'function';
+      const hasReAuthenticate = Object.getOwnPropertyNames(client).includes('reAuthenticate')
+        && typeof client.reAuthenticate === 'function';
 
       if (hasJwtInStorage && hasReAuthenticate) {
         return client
