@@ -1,5 +1,19 @@
 # Change Log
 
+## [v2.5.0](https://github.com/josx/ra-data-feathers/tree/v2.5.0) (2019-12-10)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.4.1...v2.5.0)
+
+**Closed issues:**
+
+- GET\_ONE should accept params [\#131](https://github.com/josx/ra-data-feathers/issues/131)
+
+**Merged pull requests:**
+
+- fix\(GET\_ONE\): avoid send id as param on service.get [\#135](https://github.com/josx/ra-data-feathers/pull/135) ([josx](https://github.com/josx))
+- fix\(linter\): avoid linter errors [\#134](https://github.com/josx/ra-data-feathers/pull/134) ([josx](https://github.com/josx))
+- Feather: pass params on GET\_ONE to service.get [\#133](https://github.com/josx/ra-data-feathers/pull/133) ([josx](https://github.com/josx))
+- fix\(feathers-4\): call reAuthenticate in AUTH\_CHECK if available [\#130](https://github.com/josx/ra-data-feathers/pull/130) ([jvke](https://github.com/jvke))
+
 ## [v2.4.1](https://github.com/josx/ra-data-feathers/tree/v2.4.1) (2019-10-28)
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.4.0...v2.4.1)
 
