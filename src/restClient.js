@@ -61,7 +61,8 @@ export default (client, options = {}) => {
         dbg('query=%o', query);
         return service.find({ query });
       case GET_ONE:
-        return service.get(params.id, params);
+        const restParams = deleteProp(params, defaultIdKey);
+        return service.get(params.id, restParams);
       case UPDATE:
         if (usePatch) {
           const data = params.previousData ? diff(params.previousData, params.data) : params.data;
