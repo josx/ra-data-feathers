@@ -164,6 +164,14 @@ describe('Rest Client', function () {
         address: {
           city: 'London',
         },
+        age: {
+          $gt: 20,
+        },
+        rating: {
+          score: {
+            $gte: 4,
+          },
+        },
       },
     };
     beforeEach(function () {
@@ -191,8 +199,12 @@ describe('Rest Client', function () {
           id: -1,
         },
         name: 'john',
-        address: {
-          city: 'London',
+        'address.city': 'London',
+        age: {
+          $gt: 20,
+        },
+        'rating.score': {
+          $gte: 4,
         },
       };
       return asyncResult.then(() => {
