@@ -16,6 +16,23 @@ const dbg = debug('ra-data-feathers:rest-client');
 
 const defaultIdKey = 'id';
 
+const queryOperators = ['$gt', '$gte', '$lt', '$lte', '$ne', '$sort', '$or'];
+
+function flatten(object, prefix = '', stopKeys = []) {
+  return Object.keys(object).reduce(
+    (prev, element) => {
+      const hasNextLevel = object[element]
+        && typeof object[element] === 'object'
+        && !Array.isArray(object[element])
+        && !Object.keys(object[element]).some(key => stopKeys.includes(key));
+      return hasNextLevel
+        ? { ...prev, ...flatten(object[element], `${prefix}${element}.`, stopKeys) }
+        : { ...prev, ...{ [`${prefix}${element}`]: object[element] } };
+    },
+    {},
+  );
+}
+
 function getIdKey({ resource, options }) {
   return (options[resource] && options[resource].id) || options.id || defaultIdKey;
 }
@@ -57,7 +74,7 @@ export default (client, options = {}) => {
             [field === defaultIdKey ? idKey : field]: order === 'DESC' ? -1 : 1,
           };
         }
-        Object.assign(query, params.filter);
+        Object.assign(query, flatten(params.filter, '', queryOperators));
         dbg('query=%o', query);
         return service.find({ query });
       case GET_ONE:
