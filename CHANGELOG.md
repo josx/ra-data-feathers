@@ -1,5 +1,18 @@
 # Change Log
 
+## [v2.6.0](https://github.com/josx/ra-data-feathers/tree/v2.6.0) (2020-02-18)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.5.0...v2.6.0)
+
+**Closed issues:**
+
+- Query filter not working for nested fields [\#137](https://github.com/josx/ra-data-feathers/issues/137)
+- Logout problem react-admin 3, feathers 4 [\#132](https://github.com/josx/ra-data-feathers/issues/132)
+
+**Merged pull requests:**
+
+- fix nested fields filtering [\#138](https://github.com/josx/ra-data-feathers/pull/138) ([fabioptoi](https://github.com/fabioptoi))
+- Bump handlebars from 4.1.2 to 4.5.3 [\#136](https://github.com/josx/ra-data-feathers/pull/136) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v2.5.0](https://github.com/josx/ra-data-feathers/tree/v2.5.0) (2019-12-10)
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.4.1...v2.5.0)
 
