@@ -104,7 +104,7 @@ export default (client, options = {}) => {
       case DELETE:
         return service.remove(params.id);
       case DELETE_MANY:
-        if (service.options.multi) {
+        if (!!options.useMulti && service.options.multi) {
           return service.remove(null, {
             query: {
               [idKey]: {
