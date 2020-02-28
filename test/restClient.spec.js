@@ -28,7 +28,7 @@ const getResult = { id: 1, title: 'gotten' };
 const updateResult = { id: 1, title: 'updated' };
 const createResult = { id: 1, title: 'created' };
 const removeResult = { id: 1, title: 'deleted' };
-const removeManyResult = [{ id: 1 }, { id: 2 }];
+const removeManyResult = [{ id: 1, title: 'deleted' }, { id: 2, title: 'deleted' }];
 const authenticateResult = {};
 
 let aorClient;
@@ -36,7 +36,7 @@ let fakeClient;
 let fakeService;
 
 function setupClient(options = {}) {
-  const { multi } = options || false;
+  const { useMulti, multi } = options || false;
   fakeService = {
     find: sinon.stub().returns(Promise.resolve(findResult)),
     get: sinon.stub().returns(Promise.resolve(getResult)),
@@ -47,9 +47,11 @@ function setupClient(options = {}) {
       Object.assign({}, data, { id }),
     )),
     create: sinon.stub().returns(Promise.resolve(createResult)),
-    remove: multi
+    remove: useMulti && multi
       ? sinon.stub().returns(Promise.resolve(removeManyResult))
-      : sinon.stub().returns(Promise.resolve(removeResult)),
+      : sinon.stub().callsFake(id => Promise.resolve(
+        Object.assign({}, removeResult, { id }),
+      )),
     options,
   };
 
@@ -481,10 +483,10 @@ describe('Rest Client', function () {
     });
   });
 
-  describe('when called with DELETE_MANY', function () {
+  describe('when called with DELETE_MANY, global useMulti is true, service multi is true', function () {
     const params = { ids: [1, 2] };
     beforeEach(function () {
-      setupClient({ multi: true });
+      setupClient({ useMulti: true, multi: true });
       asyncResult = aorClient(DELETE_MANY, 'posts', params);
     });
 
@@ -498,6 +500,50 @@ describe('Rest Client', function () {
             },
           },
         }));
+      });
+    });
+
+    it('returns the ids of the records returned by the client', function () {
+      return asyncResult.then((result) => {
+        expect(result).to.deep.equal({ data: removeManyResult.map(record => record.id) });
+      });
+    });
+  });
+
+  describe('when called with DELETE_MANY, global useMulti is true, service multi is false', function () {
+    const params = { ids: [1, 2] };
+    beforeEach(function () {
+      setupClient({ useMulti: true, multi: false });
+      asyncResult = aorClient(DELETE_MANY, 'posts', params);
+    });
+
+    it("calls the client's remove method once with the ids in params, and twice with individual id", function () {
+      return asyncResult.then(() => {
+        expect(fakeService.remove.calledTwice).to.be.true;
+        expect(fakeService.remove.firstCall.calledWith(1));
+        expect(fakeService.remove.secondCall.calledWith(2));
+      });
+    });
+
+    it('returns the ids of the records returned by the client', function () {
+      return asyncResult.then((result) => {
+        expect(result).to.deep.equal({ data: removeManyResult.map(record => record.id) });
+      });
+    });
+  });
+
+  describe('when called with DELETE_MANY, global useMulti is false, service multi is false', function () {
+    const params = { ids: [1, 2] };
+    beforeEach(function () {
+      setupClient({ useMulti: false, multi: false });
+      asyncResult = aorClient(DELETE_MANY, 'posts', params);
+    });
+
+    it("calls the client's remove method once with the ids in params, and twice with individual id", function () {
+      return asyncResult.then(() => {
+        expect(fakeService.remove.calledTwice).to.be.true;
+        expect(fakeService.remove.firstCall.calledWith(1));
+        expect(fakeService.remove.secondCall.calledWith(2));
       });
     });
 
