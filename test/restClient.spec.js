@@ -174,6 +174,9 @@ describe('Rest Client', function () {
             $gte: 4,
           },
         },
+        authors: {
+          $in: ['auth1', 'auth2'],
+        },
       },
     };
     beforeEach(function () {
@@ -207,6 +210,9 @@ describe('Rest Client', function () {
         },
         'rating.score': {
           $gte: 4,
+        },
+        authors: {
+          $in: ['auth1', 'auth2'],
         },
       };
       return asyncResult.then(() => {

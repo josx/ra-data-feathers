@@ -16,7 +16,7 @@ const dbg = debug('ra-data-feathers:rest-client');
 
 const defaultIdKey = 'id';
 
-const queryOperators = ['$gt', '$gte', '$lt', '$lte', '$ne', '$sort', '$or'];
+const queryOperators = ['$gt', '$gte', '$lt', '$lte', '$ne', '$sort', '$or', '$nin', '$in'];
 
 function flatten(object, prefix = '', stopKeys = []) {
   return Object.keys(object).reduce(
