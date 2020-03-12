@@ -52,13 +52,17 @@ The ra-data-feathers data provider (restClient) accepts two arguments: `client` 
 `client`should be a [configured Feathers client instance](#Feathers-Client). This argument is required.
 
 `options` contains configurable options for the ra-data-feathers restClient. The `options` argument is optional and can be omitted. In this case, defaults will be used.
-```
+```js
 const options = {
   id: 'id', // If your database uses an id field other than 'id'. Optional.
   usePatch: false, // Use PATCH instead of PUT for UPDATE requests. Optional.
   my_resource: { // Options for individual resources can be set by adding an object with the same name. Optional.
     id: 'id', // If this specific table uses an id field other than 'id'. Optional.
   },
+  /* Allows to use custom query operators from various feathers-database-adapters in GET_MANY calls.
+   * Will be merged with the default query operators ['$gt', '$gte', '$lt', '$lte', '$ne', '$sort', '$or', '$nin', '$in']
+   */
+  customQueryOperators: []
 }
 ```
 `Performant Bulk Actions` can be used by enabling multi options in the feathers application
@@ -70,7 +74,7 @@ const options = {
 
 `options` contains configurable options for the ra-data-feathers authClient. The `options` argument is optional and can be omitted. In this case, defaults shown below will be used.
 
-```
+```js
 const options = {
   storageKey: 'token', // The key in localStorage used to store the authentication token
   authenticate: { // Options included in calls to Feathers client.authenticate
@@ -88,7 +92,7 @@ const options = {
 ### Usage with the react-admin `<Admin>` component
 
 ra-data-feathers can be used by passing the `restClient` and `authClient` to the react-admin `<Admin>` component as the `dataProvider` and `authProvider` params respectively:
-```
+```jsx
 <Admin
   dataProvider={restClient(feathersClient, restClientConfig)}
   authProvider={authClient(feathersClient, authClientConfig)}

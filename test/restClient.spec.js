@@ -269,6 +269,48 @@ describe('Rest Client', function () {
     });
   });
 
+  describe('customQueryOperators-option: when called with GET_LIST', function () {
+    const params = {
+      pagination: {
+        page: 10,
+        perPage: 20,
+      },
+      sort: {
+        field: 'id',
+        order: 'DESC',
+      },
+      filter: {
+        name: { $regexp: 'john' },
+      },
+    };
+
+    it("customQueryOperators-option: calls the client's find method", function () {
+      setupClient({ customQueryOperators: ['$regexp'] });
+      asyncResult = aorClient(GET_LIST, 'posts', params);
+      return asyncResult.then(() => {
+        expect(fakeService.find.calledOnce).to.be.true;
+      });
+    });
+
+    it('customQueryOperators-option: returns the data returned by the client', function () {
+      return asyncResult.then((result) => {
+        expect(result).to.deep.equal(findResult);
+      });
+    });
+
+    it('customQueryOperators-option: correctly formats custom query operators in the query passed to the client', function () {
+      const query = {
+        $limit: 20,
+        $skip: 180,
+        $sort: { id: -1 },
+        name: { $regexp: 'john' },
+      };
+      return asyncResult.then(() => {
+        expect(fakeService.find.calledWith({ query })).to.be.true;
+      });
+    });
+  });
+
   describe('resource-id-option: when called with GET_LIST', function () {
     const params = {
       pagination: {
