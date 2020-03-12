@@ -1,5 +1,19 @@
 # Change Log
 
+## [v2.7.0](https://github.com/josx/ra-data-feathers/tree/v2.7.0) (2020-03-12)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.6.0...v2.7.0)
+
+**Closed issues:**
+
+- $in query operator not properly supported [\#140](https://github.com/josx/ra-data-feathers/issues/140)
+- react admin v3 alpha has breaking changes any plans to update ? [\#110](https://github.com/josx/ra-data-feathers/issues/110)
+
+**Merged pull requests:**
+
+- Add support for custom query operators in GET\_MANY  [\#142](https://github.com/josx/ra-data-feathers/pull/142) ([alex-all3dp](https://github.com/alex-all3dp))
+- Fix in and nin support [\#141](https://github.com/josx/ra-data-feathers/pull/141) ([josx](https://github.com/josx))
+- add global option "useMulti" for configuring bulk actions [\#139](https://github.com/josx/ra-data-feathers/pull/139) ([loming](https://github.com/loming))
+
 ## [v2.6.0](https://github.com/josx/ra-data-feathers/tree/v2.6.0) (2020-02-18)
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.5.0...v2.6.0)
 
