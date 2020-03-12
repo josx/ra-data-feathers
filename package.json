@@ -90,12 +90,30 @@
       "hireable": true
     },
     {
-      "name": "Dmitrii Maganov",
+      "name": null,
       "email": null,
-      "url": "https://github.com/vonagam",
+      "url": "https://github.com/jvke",
       "contributions": 1,
-      "additions": 51,
-      "deletions": 219,
+      "additions": 35,
+      "deletions": 1,
+      "hireable": true
+    },
+    {
+      "name": "Fernando Navarro",
+      "email": null,
+      "url": "https://github.com/kfern",
+      "contributions": 1,
+      "additions": 63,
+      "deletions": 1,
+      "hireable": null
+    },
+    {
+      "name": "LoMing",
+      "email": null,
+      "url": "https://github.com/loming",
+      "contributions": 1,
+      "additions": 53,
+      "deletions": 7,
       "hireable": null
     },
     {
@@ -108,12 +126,30 @@
       "hireable": null
     },
     {
-      "name": "Fernando Navarro",
+      "name": null,
       "email": null,
-      "url": "https://github.com/kfern",
+      "url": "https://github.com/nhkhanh",
       "contributions": 1,
-      "additions": 63,
+      "additions": 1,
       "deletions": 1,
+      "hireable": null
+    },
+    {
+      "name": null,
+      "email": null,
+      "url": "https://github.com/alex-all3dp",
+      "contributions": 1,
+      "additions": 52,
+      "deletions": 4,
+      "hireable": null
+    },
+    {
+      "name": "Fábio Toi",
+      "email": null,
+      "url": "https://github.com/fabioptoi",
+      "contributions": 1,
+      "additions": 32,
+      "deletions": 3,
       "hireable": null
     },
     {
@@ -124,15 +160,6 @@
       "additions": 33,
       "deletions": 2,
       "hireable": null
-    },
-    {
-      "name": "Ryan Harmuth",
-      "email": null,
-      "url": "https://github.com/Ryanthegiantlion",
-      "contributions": 1,
-      "additions": 4,
-      "deletions": 0,
-      "hireable": true
     },
     {
       "name": "Dan Stevens",
@@ -153,6 +180,15 @@
       "hireable": true
     },
     {
+      "name": "Ryan Harmuth",
+      "email": null,
+      "url": "https://github.com/Ryanthegiantlion",
+      "contributions": 1,
+      "additions": 4,
+      "deletions": 0,
+      "hireable": true
+    },
+    {
       "name": "Dream",
       "email": null,
       "url": "https://github.com/dreamrace",
@@ -162,30 +198,12 @@
       "hireable": null
     },
     {
-      "name": "Tomasz Bak",
+      "name": "Dmitrii Maganov",
       "email": null,
-      "url": "https://github.com/tb",
+      "url": "https://github.com/vonagam",
       "contributions": 2,
-      "additions": 187,
-      "deletions": 127,
-      "hireable": true
-    },
-    {
-      "name": "Lijo Antony",
-      "email": null,
-      "url": "https://github.com/lijoantony",
-      "contributions": 4,
-      "additions": 24,
-      "deletions": 5,
-      "hireable": true
-    },
-    {
-      "name": null,
-      "email": null,
-      "url": "https://github.com/nhkhanh",
-      "contributions": 1,
-      "additions": 1,
-      "deletions": 1,
+      "additions": 55,
+      "deletions": 221,
       "hireable": null
     },
     {
@@ -207,6 +225,24 @@
       "hireable": null
     },
     {
+      "name": "Lijo Antony",
+      "email": null,
+      "url": "https://github.com/lijoantony",
+      "contributions": 4,
+      "additions": 24,
+      "deletions": 5,
+      "hireable": true
+    },
+    {
+      "name": "Tomasz Bak",
+      "email": null,
+      "url": "https://github.com/tb",
+      "contributions": 2,
+      "additions": 187,
+      "deletions": 127,
+      "hireable": true
+    },
+    {
       "name": "Amr Noman",
       "email": null,
       "url": "https://github.com/AmrN",
@@ -219,18 +255,9 @@
       "name": "José Luis Di Biase",
       "email": null,
       "url": "https://github.com/josx",
-      "contributions": 84,
-      "additions": 14374,
-      "deletions": 8019,
-      "hireable": true
-    },
-    {
-      "name": "Nicholas Nelson",
-      "email": null,
-      "url": "https://github.com/nicholasnelson",
-      "contributions": 10,
-      "additions": 436,
-      "deletions": 220,
+      "contributions": 98,
+      "additions": 14557,
+      "deletions": 12133,
       "hireable": true
     },
     {
@@ -241,6 +268,15 @@
       "additions": 2507,
       "deletions": 19,
       "hireable": null
+    },
+    {
+      "name": "Nicholas Nelson",
+      "email": null,
+      "url": "https://github.com/nicholasnelson",
+      "contributions": 10,
+      "additions": 436,
+      "deletions": 220,
+      "hireable": true
     }
   ]
 }
