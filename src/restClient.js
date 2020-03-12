@@ -64,6 +64,8 @@ export default (client, options = {}) => {
       case GET_LIST:
         const { page, perPage } = params.pagination || {};
         const { field, order } = params.sort || {};
+        const additionalQueryOperators = Array.isArray(options.customQueryOperators) ? options.customQueryOperators : [];
+        const allUniqueQueryOperators = [...new Set(queryOperators.concat(additionalQueryOperators))]
         dbg('field=%o, order=%o', field, order);
         if (perPage && page) {
           query.$limit = perPage;
@@ -74,7 +76,7 @@ export default (client, options = {}) => {
             [field === defaultIdKey ? idKey : field]: order === 'DESC' ? -1 : 1,
           };
         }
-        Object.assign(query, flatten(params.filter, '', queryOperators));
+        Object.assign(query, flatten(params.filter, '', allUniqueQueryOperators));
         dbg('query=%o', query);
         return service.find({ query });
       case GET_ONE:
