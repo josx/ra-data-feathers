@@ -36,8 +36,7 @@ export default (client, options = {}) => (type, params) => {
         [passwordField]: password,
       });
     case AUTH_LOGOUT:
-      localStorage.removeItem(permissionsKey);
-      return client.logout();
+      return client.logout().then(() => localStorage.removeItem(permissionsKey));
     case AUTH_CHECK:
       const hasJwtInStorage = !!localStorage.getItem(storageKey);
       const hasReAuthenticate = Object.getOwnPropertyNames(client).includes('reAuthenticate')
