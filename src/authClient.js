@@ -30,8 +30,7 @@ export default (client, options = {}) => {
       });
     },
     logout: params => {
-      localStorage.removeItem(permissionsKey);
-      return client.logout();
+      return client.logout().then(() => localStorage.removeItem(permissionsKey));
     },
     checkAuth: params => {
       const hasJwtInStorage = !!localStorage.getItem(storageKey);
