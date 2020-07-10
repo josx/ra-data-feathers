@@ -189,6 +189,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "sgobotta",
+      "name": "Santiago Botta",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/17838461?v=4",
+      "profile": "https://github.com/sgobotta",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
