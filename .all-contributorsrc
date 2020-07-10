@@ -19,6 +19,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "nicholasnelson",
+      "name": "Nicholas Nelson",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7485405?v=4",
+      "profile": "http://nicknelson.io/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
