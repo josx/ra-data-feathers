@@ -229,6 +229,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "jvke",
+      "name": "jvke",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3538455?v=4",
+      "profile": "http://jvke.co/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
