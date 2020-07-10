@@ -1,0 +1,25 @@
+{
+  "projectName": "ra-data-feathers",
+  "projectOwner": "josx",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 80,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "josx",
+      "name": "José Luis Di Biase",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/791137?v=4",
+      "profile": "http://www.camba.coop/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
