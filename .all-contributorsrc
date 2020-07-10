@@ -109,6 +109,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "tb",
+      "name": "Tomasz Bak",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/71683?v=4",
+      "profile": "https://www.softkraft.co/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
