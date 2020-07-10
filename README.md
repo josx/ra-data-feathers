@@ -1,6 +1,6 @@
 # ra-data-feathers
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-19-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-20-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Feathers data provider for [react-admin](https://github.com/marmelab/react-admin)
@@ -196,6 +196,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://faizudd.in/"><img src="https://avatars1.githubusercontent.com/u/10869488?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Mohammed Faizuddin</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=TheHyphen" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=TheHyphen" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Ryanthegiantlion"><img src="https://avatars2.githubusercontent.com/u/1843898?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Ryan Harmuth</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=Ryanthegiantlion" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=Ryanthegiantlion" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/sgobotta"><img src="https://avatars2.githubusercontent.com/u/17838461?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Santiago Botta</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=sgobotta" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=sgobotta" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/taylorgoodallau"><img src="https://avatars2.githubusercontent.com/u/47597450?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Taylor Goodall</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=taylorgoodallau" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=taylorgoodallau" title="Documentation">📖</a></td>
   </tr>
 </table>
 
