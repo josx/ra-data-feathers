@@ -129,6 +129,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "dprentis",
+      "name": "Daniel Prentis",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1877008?v=4",
+      "profile": "https://github.com/dprentis",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7

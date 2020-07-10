@@ -1,6 +1,6 @@
 # ra-data-feathers
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Feathers data provider for [react-admin](https://github.com/marmelab/react-admin)
@@ -187,6 +187,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/7flash"><img src="https://avatars2.githubusercontent.com/u/4569866?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Igor Berlenko</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=7flash" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=7flash" title="Documentation">📖</a></td>
     <td align="center"><a href="https://www.softkraft.co/"><img src="https://avatars2.githubusercontent.com/u/71683?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Tomasz Bak</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=tb" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=tb" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/DanStorm"><img src="https://avatars3.githubusercontent.com/u/5097089?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Dan Stevens</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=DanStorm" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=DanStorm" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/dprentis"><img src="https://avatars2.githubusercontent.com/u/1877008?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Daniel Prentis</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=dprentis" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=dprentis" title="Documentation">📖</a></td>
   </tr>
 </table>
 
