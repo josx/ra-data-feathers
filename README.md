@@ -1,6 +1,6 @@
 # ra-data-feathers
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Feathers data provider for [react-admin](https://github.com/marmelab/react-admin)
@@ -192,6 +192,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/kfern"><img src="https://avatars2.githubusercontent.com/u/1898891?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Fernando Navarro</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=kfern" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=kfern" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/loming"><img src="https://avatars3.githubusercontent.com/u/4988275?v=4?s=80" width="80px;" alt=""/><br /><sub><b>LoMing</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=loming" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=loming" title="Documentation">📖</a></td>
   </tr>
 </table>
 
