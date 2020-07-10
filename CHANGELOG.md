@@ -1,5 +1,13 @@
 # Change Log
 
+## [v2.8.0](https://github.com/josx/ra-data-feathers/tree/v2.8.0) (2020-07-10)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.7.0...v2.8.0)
+
+**Merged pull requests:**
+
+- \[RFR\] fix auth client logout action issue [\#147](https://github.com/josx/ra-data-feathers/pull/147) ([FacundoMainere](https://github.com/FacundoMainere))
+- Bump acorn from 6.1.1 to 6.4.1 [\#144](https://github.com/josx/ra-data-feathers/pull/144) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v2.7.0](https://github.com/josx/ra-data-feathers/tree/v2.7.0) (2020-03-12)
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.6.0...v2.7.0)
 
