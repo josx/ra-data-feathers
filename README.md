@@ -1,6 +1,6 @@
 # ra-data-feathers
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Feathers data provider for [react-admin](https://github.com/marmelab/react-admin)
@@ -180,6 +180,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/lijoantony"><img src="https://avatars2.githubusercontent.com/u/1202940?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Lijo Antony</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=lijoantony" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=lijoantony" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/tony-kerz"><img src="https://avatars0.githubusercontent.com/u/1223231?v=4?s=80" width="80px;" alt=""/><br /><sub><b>tony kerz</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=tony-kerz" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=tony-kerz" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/vonagam"><img src="https://avatars1.githubusercontent.com/u/5790814?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Dmitrii Maganov</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=vonagam" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=vonagam" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/dreamrace"><img src="https://avatars3.githubusercontent.com/u/3618360?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Dream</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=dreamrace" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=dreamrace" title="Documentation">📖</a></td>
   </tr>
 </table>
 
