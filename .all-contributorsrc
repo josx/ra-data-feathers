@@ -169,6 +169,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "TheHyphen",
+      "name": "Mohammed Faizuddin",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/10869488?v=4",
+      "profile": "https://faizudd.in/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
