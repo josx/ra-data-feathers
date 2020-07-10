@@ -69,6 +69,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "vonagam",
+      "name": "Dmitrii Maganov",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/5790814?v=4",
+      "profile": "https://github.com/vonagam",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
