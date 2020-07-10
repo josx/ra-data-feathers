@@ -1,6 +1,6 @@
 # ra-data-feathers
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Feathers data provider for [react-admin](https://github.com/marmelab/react-admin)
@@ -183,6 +183,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/dreamrace"><img src="https://avatars3.githubusercontent.com/u/3618360?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Dream</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=dreamrace" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=dreamrace" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/wedneyyuri"><img src="https://avatars3.githubusercontent.com/u/7511692?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Wédney Yuri</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=wedneyyuri" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=wedneyyuri" title="Documentation">📖</a></td>
   </tr>
 </table>
 
