@@ -209,6 +209,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "alex-all3dp",
+      "name": "Alexander Friedl",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/52403795?v=4",
+      "profile": "https://craftcloud3d.com/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
