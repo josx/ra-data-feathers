@@ -39,6 +39,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "AmrN",
+      "name": "Amr Noman",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/11032286?v=4",
+      "profile": "https://github.com/AmrN",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
