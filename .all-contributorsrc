@@ -219,6 +219,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "fabioptoi",
+      "name": "Fábio Toi",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/11648668?v=4",
+      "profile": "https://github.com/fabioptoi",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
