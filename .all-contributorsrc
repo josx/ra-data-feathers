@@ -59,6 +59,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "tony-kerz",
+      "name": "tony kerz",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1223231?v=4",
+      "profile": "https://github.com/tony-kerz",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
