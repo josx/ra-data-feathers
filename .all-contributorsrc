@@ -149,6 +149,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "kfern",
+      "name": "Fernando Navarro",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1898891?v=4",
+      "profile": "https://github.com/kfern",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
