@@ -139,6 +139,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "FacundoMainere",
+      "name": "Facundo Mainere",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1382608?v=4",
+      "profile": "https://camba.coop/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
