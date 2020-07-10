@@ -1,6 +1,6 @@
 # ra-data-feathers
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Feathers data provider for [react-admin](https://github.com/marmelab/react-admin)
@@ -175,6 +175,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://www.camba.coop/"><img src="https://avatars1.githubusercontent.com/u/791137?v=4?s=80" width="80px;" alt=""/><br /><sub><b>José Luis Di Biase</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=josx" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=josx" title="Documentation">📖</a></td>
     <td align="center"><a href="http://nicknelson.io/"><img src="https://avatars1.githubusercontent.com/u/7485405?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Nicholas Nelson</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=nicholasnelson" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=nicholasnelson" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://www.champigny.name/"><img src="https://avatars3.githubusercontent.com/u/707217?v=4?s=80" width="80px;" alt=""/><br /><sub><b>F.C</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=fonzarely" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=fonzarely" title="Documentation">📖</a></td>
   </tr>
 </table>
 

@@ -29,6 +29,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "fonzarely",
+      "name": "F.C",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/707217?v=4",
+      "profile": "http://www.champigny.name/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
