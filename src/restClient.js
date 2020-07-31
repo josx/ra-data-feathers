@@ -76,7 +76,7 @@ export default (client, options = {}) => {
             [field === defaultIdKey ? idKey : field]: order === 'DESC' ? -1 : 1,
           };
         }
-        Object.assign(query, flatten(params.filter, '', allUniqueQueryOperators));
+        Object.assign(query, (params.filter) ? flatten(params.filter, '', allUniqueQueryOperators) : {});
         dbg('query=%o', query);
         return service.find({ query });
       case GET_ONE:
