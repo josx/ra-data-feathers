@@ -223,6 +223,27 @@ describe('Rest Client', function () {
     });
   });
 
+  describe('no:params when called with GET_LIST', function () {
+    const params = {};
+
+    beforeEach(function () {
+      setupClient();
+      asyncResult = aorClient(GET_LIST, 'posts', params);
+    });
+
+    it("no:params calls the client's find method", function () {
+      return asyncResult.then(() => {
+        expect(fakeService.find.calledOnce).to.be.true;
+      });
+    });
+
+    it('no:params returns the data returned by the client', function () {
+      return asyncResult.then((result) => {
+        expect(result).to.deep.equal(findResult);
+      });
+    });
+  });
+
   describe('id-option: when called with GET_LIST', function () {
     const params = {
       pagination: {
