@@ -1,5 +1,18 @@
 # Change Log
 
+## [v2.8.1](https://github.com/josx/ra-data-feathers/tree/v2.8.1) (2020-07-31)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.8.0...v2.8.1)
+
+**Closed issues:**
+
+- Error using GET\_LIST with empty set of parameters [\#151](https://github.com/josx/ra-data-feathers/issues/151)
+
+**Merged pull requests:**
+
+- Fix \#151 - Error using GET\_LIST with empty set of parameters [\#152](https://github.com/josx/ra-data-feathers/pull/152) ([josx](https://github.com/josx))
+- Bump lodash from 4.17.15 to 4.17.19 [\#150](https://github.com/josx/ra-data-feathers/pull/150) ([dependabot[bot]](https://github.com/apps/dependabot))
+- All contributors [\#149](https://github.com/josx/ra-data-feathers/pull/149) ([josx](https://github.com/josx))
+
 ## [v2.8.0](https://github.com/josx/ra-data-feathers/tree/v2.8.0) (2020-07-10)
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.7.0...v2.8.0)
 
