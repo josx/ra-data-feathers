@@ -7,6 +7,9 @@ import {
 } from 'react-admin';
 import decodeJwt from 'jwt-decode';
 
+/**
+ * @param {{storageKey?: string, authenticate?: {strategy: string}, permissionKey?: string, permissionField?: string, passwordField?: string, usernameField?: string, redirectTo?: string, logoutOnForbidden?: boolean}} options
+ */
 export default (client, options = {}) => (type, params) => {
   const {
     storageKey,

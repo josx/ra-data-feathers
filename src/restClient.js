@@ -43,6 +43,9 @@ function deleteProp(obj, prop) {
   return res;
 }
 
+/**
+ * @param {{usePatch?: boolean, customQueryOperators?: string[], useMulti?: boolean, id?: string} & {[Key: string]: {id: string}}} options
+ */
 export default (client, options = {}) => {
   const usePatch = !!options.usePatch;
   const mapRequest = (type, resource, params) => {
