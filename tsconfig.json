@@ -1,0 +1,12 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": true,
+    "isolatedModules": true,
+    "emitDeclarationOnly": true,
+    "outDir": "lib",
+  },
+}
