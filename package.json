@@ -3,10 +3,12 @@
   "version": "2.8.1",
   "description": "A feathers client for react-admin",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "pretest": "npm run build",
     "test": "npm run coverage",
     "build": "make build",
+    "build:types": "tsc",
     "clean": "make clean",
     "prepublish": "make build",
     "publish": "git push origin --tags && npm run changelog && git push origin",
@@ -42,8 +44,8 @@
   },
   "homepage": "https://github.com/josx/ra-data-feathers#readme",
   "peerDependencies": {
-    "react-admin": "^2.1.1",
-    "@feathersjs/client": "^3.5.3 || ^4.3.0"
+    "@feathersjs/client": "^3.5.3 || ^4.3.0",
+    "react-admin": "^2.1.1"
   },
   "dependencies": {
     "debug": "^3.0.0",
@@ -69,6 +71,7 @@
     "react": "^16.4.1",
     "react-admin": "^2.1.1",
     "react-dom": "^16.4.1",
-    "sinon": "^2.2.0"
+    "sinon": "^2.2.0",
+    "typescript": "^4.1.3"
   }
 }

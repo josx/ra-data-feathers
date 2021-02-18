@@ -1,2 +1,2 @@
-export authClient from './authClient';
-export restClient from './restClient';
+export { default as authClient } from './authClient';
+export { default as restClient } from './restClient';
