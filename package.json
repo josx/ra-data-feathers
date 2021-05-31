@@ -17,7 +17,7 @@
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts --require babel-register",
-    "mocha": "env DEBUG=ra-data-feathers:* mocha  --require babel-register"
+    "mocha": "cross-env DEBUG=ra-data-feathers:* mocha  --require babel-register"
   },
   "files": [
     "LICENSE",
