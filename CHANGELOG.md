@@ -1,6 +1,30 @@
-# Change Log
+# Changelog
+
+## [Unreleased](https://github.com/josx/ra-data-feathers/tree/HEAD)
+
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.9.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump ua-parser-js from 0.7.17 to 0.7.28 [\#160](https://github.com/josx/ra-data-feathers/pull/160) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump y18n from 4.0.0 to 4.0.3 [\#159](https://github.com/josx/ra-data-feathers/pull/159) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump lodash from 4.17.19 to 4.17.21 [\#158](https://github.com/josx/ra-data-feathers/pull/158) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump hosted-git-info from 2.7.1 to 2.8.9 [\#157](https://github.com/josx/ra-data-feathers/pull/157) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update project compatibility for build/test at Windows [\#156](https://github.com/josx/ra-data-feathers/pull/156) ([berviantoleo](https://github.com/berviantoleo))
+- Add types [\#154](https://github.com/josx/ra-data-feathers/pull/154) ([berviantoleo](https://github.com/berviantoleo))
+
+## [v2.9.0](https://github.com/josx/ra-data-feathers/tree/v2.9.0) (2021-06-02)
+
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.8.1...v2.9.0)
+
+**Closed issues:**
+
+- No redirect to login after API returns 401 [\#155](https://github.com/josx/ra-data-feathers/issues/155)
+- Typescript support [\#153](https://github.com/josx/ra-data-feathers/issues/153)
+- Investigate adding ability to build/test easily in Windows [\#93](https://github.com/josx/ra-data-feathers/issues/93)
 
 ## [v2.8.1](https://github.com/josx/ra-data-feathers/tree/v2.8.1) (2020-07-31)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.8.0...v2.8.1)
 
 **Closed issues:**
@@ -14,6 +38,7 @@
 - All contributors [\#149](https://github.com/josx/ra-data-feathers/pull/149) ([josx](https://github.com/josx))
 
 ## [v2.8.0](https://github.com/josx/ra-data-feathers/tree/v2.8.0) (2020-07-10)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.7.0...v2.8.0)
 
 **Merged pull requests:**
@@ -22,6 +47,7 @@
 - Bump acorn from 6.1.1 to 6.4.1 [\#144](https://github.com/josx/ra-data-feathers/pull/144) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v2.7.0](https://github.com/josx/ra-data-feathers/tree/v2.7.0) (2020-03-12)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.6.0...v2.7.0)
 
 **Closed issues:**
@@ -36,6 +62,7 @@
 - add global option "useMulti" for configuring bulk actions [\#139](https://github.com/josx/ra-data-feathers/pull/139) ([loming](https://github.com/loming))
 
 ## [v2.6.0](https://github.com/josx/ra-data-feathers/tree/v2.6.0) (2020-02-18)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.5.0...v2.6.0)
 
 **Closed issues:**
@@ -49,6 +76,7 @@
 - Bump handlebars from 4.1.2 to 4.5.3 [\#136](https://github.com/josx/ra-data-feathers/pull/136) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v2.5.0](https://github.com/josx/ra-data-feathers/tree/v2.5.0) (2019-12-10)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.4.1...v2.5.0)
 
 **Closed issues:**
@@ -63,6 +91,7 @@
 - fix\(feathers-4\): call reAuthenticate in AUTH\_CHECK if available [\#130](https://github.com/josx/ra-data-feathers/pull/130) ([jvke](https://github.com/jvke))
 
 ## [v2.4.1](https://github.com/josx/ra-data-feathers/tree/v2.4.1) (2019-10-28)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.4.0...v2.4.1)
 
 **Closed issues:**
@@ -74,6 +103,7 @@
 - Move chai-as-promised to devDependencies [\#129](https://github.com/josx/ra-data-feathers/pull/129) ([vonagam](https://github.com/vonagam))
 
 ## [v2.4.0](https://github.com/josx/ra-data-feathers/tree/v2.4.0) (2019-09-18)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.3.0...v2.4.0)
 
 **Closed issues:**
@@ -86,6 +116,7 @@
 - Undo softDelete option and support v4 [\#125](https://github.com/josx/ra-data-feathers/pull/125) ([vonagam](https://github.com/vonagam))
 
 ## [v2.3.0](https://github.com/josx/ra-data-feathers/tree/v2.3.0) (2019-09-02)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.2.1...v2.3.0)
 
 **Closed issues:**
@@ -99,6 +130,7 @@
 - Adds softDelete as an option. If true, adds $ignoreDeletedAt: true to… [\#121](https://github.com/josx/ra-data-feathers/pull/121) ([DanStorm](https://github.com/DanStorm))
 
 ## [v2.2.1](https://github.com/josx/ra-data-feathers/tree/v2.2.1) (2019-08-02)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.2.0...v2.2.1)
 
 **Merged pull requests:**
@@ -112,6 +144,7 @@
 - Bump tough-cookie from 2.3.2 to 2.3.4 [\#113](https://github.com/josx/ra-data-feathers/pull/113) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v2.2.0](https://github.com/josx/ra-data-feathers/tree/v2.2.0) (2019-08-02)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.1.0...v2.2.0)
 
 **Closed issues:**
@@ -127,6 +160,7 @@
 - Bump handlebars from 4.0.12 to 4.1.2 [\#106](https://github.com/josx/ra-data-feathers/pull/106) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v2.1.0](https://github.com/josx/ra-data-feathers/tree/v2.1.0) (2019-06-21)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.8...v2.1.0)
 
 **Closed issues:**
@@ -144,6 +178,7 @@
 - Correct default authenticate field name [\#99](https://github.com/josx/ra-data-feathers/pull/99) ([nhkhanh](https://github.com/nhkhanh))
 
 ## [v2.0.8](https://github.com/josx/ra-data-feathers/tree/v2.0.8) (2019-02-12)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.7...v2.0.8)
 
 **Closed issues:**
@@ -175,9 +210,15 @@
 - Add basic documentation of redirectTo option [\#73](https://github.com/josx/ra-data-feathers/pull/73) ([nicholasnelson](https://github.com/nicholasnelson))
 
 ## [v2.0.7](https://github.com/josx/ra-data-feathers/tree/v2.0.7) (2018-09-26)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.6...v2.0.7)
 
+**Merged pull requests:**
+
+- Renaming aor-feathers-client to ra-data-feathers [\#72](https://github.com/josx/ra-data-feathers/pull/72) ([josx](https://github.com/josx))
+
 ## [v2.0.6](https://github.com/josx/ra-data-feathers/tree/v2.0.6) (2018-09-26)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.5...v2.0.6)
 
 **Closed issues:**
@@ -186,11 +227,8 @@
 - Trouble accessing the "\_id" value of the loggedin user [\#54](https://github.com/josx/ra-data-feathers/issues/54)
 - Missing depency 'feathers-client' [\#28](https://github.com/josx/ra-data-feathers/issues/28)
 
-**Merged pull requests:**
-
-- Renaming aor-feathers-client to ra-data-feathers [\#72](https://github.com/josx/ra-data-feathers/pull/72) ([josx](https://github.com/josx))
-
 ## [v2.0.5](https://github.com/josx/ra-data-feathers/tree/v2.0.5) (2018-09-13)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.4...v2.0.5)
 
 **Closed issues:**
@@ -206,6 +244,7 @@
 - Implement DELETE\_MANY [\#66](https://github.com/josx/ra-data-feathers/pull/66) ([nicholasnelson](https://github.com/nicholasnelson))
 
 ## [v2.0.4](https://github.com/josx/ra-data-feathers/tree/v2.0.4) (2018-08-10)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.3...v2.0.4)
 
 **Merged pull requests:**
@@ -213,6 +252,7 @@
 - Kill calling feathers authenticate for every service [\#64](https://github.com/josx/ra-data-feathers/pull/64) ([josx](https://github.com/josx))
 
 ## [v2.0.3](https://github.com/josx/ra-data-feathers/tree/v2.0.3) (2018-07-26)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.2...v2.0.3)
 
 **Closed issues:**
@@ -224,6 +264,7 @@
 - CREATE: adding backend api response to dataprovider response [\#63](https://github.com/josx/ra-data-feathers/pull/63) ([josx](https://github.com/josx))
 
 ## [v2.0.2](https://github.com/josx/ra-data-feathers/tree/v2.0.2) (2018-07-26)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.1...v2.0.2)
 
 **Closed issues:**
@@ -235,6 +276,7 @@
 - Auth Promise Rejection: AUTH\_ERROR code 403, AUTH\_GET\_PERMISSIONS \(\#5… [\#62](https://github.com/josx/ra-data-feathers/pull/62) ([josx](https://github.com/josx))
 
 ## [v2.0.1](https://github.com/josx/ra-data-feathers/tree/v2.0.1) (2018-07-13)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.0.0...v2.0.1)
 
 **Merged pull requests:**
@@ -242,6 +284,7 @@
 - Authclient options: Custom username and password [\#57](https://github.com/josx/ra-data-feathers/pull/57) ([josx](https://github.com/josx))
 
 ## [v2.0.0](https://github.com/josx/ra-data-feathers/tree/v2.0.0) (2018-07-05)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v1.0.0...v2.0.0)
 
 **Merged pull requests:**
@@ -249,9 +292,11 @@
 - React admin [\#56](https://github.com/josx/ra-data-feathers/pull/56) ([josx](https://github.com/josx))
 
 ## [v1.0.0](https://github.com/josx/ra-data-feathers/tree/v1.0.0) (2018-07-05)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v0.9.0...v1.0.0)
 
 ## [v0.9.0](https://github.com/josx/ra-data-feathers/tree/v0.9.0) (2018-03-15)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v0.8.0...v0.9.0)
 
 **Closed issues:**
@@ -265,6 +310,7 @@
 - usePatch: Do object-diff only when params.previousData is present [\#50](https://github.com/josx/ra-data-feathers/pull/50) ([lijoantony](https://github.com/lijoantony))
 
 ## [v0.8.0](https://github.com/josx/ra-data-feathers/tree/v0.8.0) (2017-12-14)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v0.7.1...v0.8.0)
 
 **Closed issues:**
@@ -278,6 +324,7 @@
 - Permission example in readme \(related to \#47\) [\#48](https://github.com/josx/ra-data-feathers/pull/48) ([kfern](https://github.com/kfern))
 
 ## [v0.7.1](https://github.com/josx/ra-data-feathers/tree/v0.7.1) (2017-10-09)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v0.7.0...v0.7.1)
 
 **Merged pull requests:**
@@ -285,6 +332,7 @@
 - Add jwt-decode on dev deps [\#46](https://github.com/josx/ra-data-feathers/pull/46) ([josx](https://github.com/josx))
 
 ## [v0.7.0](https://github.com/josx/ra-data-feathers/tree/v0.7.0) (2017-10-09)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v0.6.0...v0.7.0)
 
 **Closed issues:**
@@ -301,6 +349,7 @@
 - GET MANY REFERENCE [\#42](https://github.com/josx/ra-data-feathers/pull/42) ([fonzarely](https://github.com/fonzarely))
 
 ## [v0.6.0](https://github.com/josx/ra-data-feathers/tree/v0.6.0) (2017-09-01)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v0.5.0...v0.6.0)
 
 **Closed issues:**
@@ -314,6 +363,7 @@
 - Call authenticate method on refresh page [\#36](https://github.com/josx/ra-data-feathers/pull/36) ([7flash](https://github.com/7flash))
 
 ## [v0.5.0](https://github.com/josx/ra-data-feathers/tree/v0.5.0) (2017-08-10)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v0.4.0...v0.5.0)
 
 **Closed issues:**
@@ -332,6 +382,7 @@
 - Implements AUTH\_ERROR support [\#32](https://github.com/josx/ra-data-feathers/pull/32) ([lijoantony](https://github.com/lijoantony))
 
 ## [v0.4.0](https://github.com/josx/ra-data-feathers/tree/v0.4.0) (2017-07-13)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v0.3.1...v0.4.0)
 
 **Closed issues:**
@@ -350,6 +401,7 @@
 - add some tests for rest client [\#14](https://github.com/josx/ra-data-feathers/pull/14) ([AmrN](https://github.com/AmrN))
 
 ## [v0.3.1](https://github.com/josx/ra-data-feathers/tree/v0.3.1) (2017-05-16)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v0.3.0...v0.3.1)
 
 **Closed issues:**
@@ -365,6 +417,7 @@
 - Update admin-on-rest version [\#10](https://github.com/josx/ra-data-feathers/pull/10) ([AmrN](https://github.com/AmrN))
 
 ## [v0.3.0](https://github.com/josx/ra-data-feathers/tree/v0.3.0) (2017-03-27)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v0.2.0...v0.3.0)
 
 **Closed issues:**
@@ -376,6 +429,7 @@
 - Fixed GET\_MANY handler [\#6](https://github.com/josx/ra-data-feathers/pull/6) ([Ryanthegiantlion](https://github.com/Ryanthegiantlion))
 
 ## [v0.2.0](https://github.com/josx/ra-data-feathers/tree/v0.2.0) (2017-03-14)
+
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v0.1.0...v0.2.0)
 
 **Closed issues:**
@@ -389,5 +443,8 @@
 
 ## [v0.1.0](https://github.com/josx/ra-data-feathers/tree/v0.1.0) (2017-03-04)
 
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/27c9a72baea7a2ba2ff700d741caf82be066069e...v0.1.0)
 
-\* *This Change Log was automatically generated by [github_changelog_generator](https://github.com/skywinder/Github-Changelog-Generator)*
+
+
+\* *This Changelog was automatically generated by [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator)*
