@@ -1,18 +1,5 @@
 # Changelog
 
-## [Unreleased](https://github.com/josx/ra-data-feathers/tree/HEAD)
-
-[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.9.0...HEAD)
-
-**Merged pull requests:**
-
-- Bump ua-parser-js from 0.7.17 to 0.7.28 [\#160](https://github.com/josx/ra-data-feathers/pull/160) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump y18n from 4.0.0 to 4.0.3 [\#159](https://github.com/josx/ra-data-feathers/pull/159) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump lodash from 4.17.19 to 4.17.21 [\#158](https://github.com/josx/ra-data-feathers/pull/158) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump hosted-git-info from 2.7.1 to 2.8.9 [\#157](https://github.com/josx/ra-data-feathers/pull/157) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Update project compatibility for build/test at Windows [\#156](https://github.com/josx/ra-data-feathers/pull/156) ([berviantoleo](https://github.com/berviantoleo))
-- Add types [\#154](https://github.com/josx/ra-data-feathers/pull/154) ([berviantoleo](https://github.com/berviantoleo))
-
 ## [v2.9.0](https://github.com/josx/ra-data-feathers/tree/v2.9.0) (2021-06-02)
 
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.8.1...v2.9.0)
@@ -22,6 +9,15 @@
 - No redirect to login after API returns 401 [\#155](https://github.com/josx/ra-data-feathers/issues/155)
 - Typescript support [\#153](https://github.com/josx/ra-data-feathers/issues/153)
 - Investigate adding ability to build/test easily in Windows [\#93](https://github.com/josx/ra-data-feathers/issues/93)
+
+**Merged pull requests:**
+
+- Bump ua-parser-js from 0.7.17 to 0.7.28 [\#160](https://github.com/josx/ra-data-feathers/pull/160) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump y18n from 4.0.0 to 4.0.3 [\#159](https://github.com/josx/ra-data-feathers/pull/159) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump lodash from 4.17.19 to 4.17.21 [\#158](https://github.com/josx/ra-data-feathers/pull/158) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump hosted-git-info from 2.7.1 to 2.8.9 [\#157](https://github.com/josx/ra-data-feathers/pull/157) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update project compatibility for build/test at Windows [\#156](https://github.com/josx/ra-data-feathers/pull/156) ([berviantoleo](https://github.com/berviantoleo))
+- Add types [\#154](https://github.com/josx/ra-data-feathers/pull/154) ([berviantoleo](https://github.com/berviantoleo))
 
 ## [v2.8.1](https://github.com/josx/ra-data-feathers/tree/v2.8.1) (2020-07-31)
 
