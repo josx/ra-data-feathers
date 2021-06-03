@@ -44,7 +44,7 @@ function deleteProp(obj, prop) {
 }
 
 /**
- * @param {{usePatch?: boolean, customQueryOperators?: string[], useMulti?: boolean, id?: string} & {[Key: string]: {id: string}}} options
+ * @param {{usePatch?: boolean, customQueryOperators?: string[], useMulti?: boolean, id?: string, [Key: string]: {id: string} | any}} options
  */
 export default (client, options = {}) => {
   const usePatch = !!options.usePatch;
