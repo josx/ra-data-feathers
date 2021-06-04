@@ -1,5 +1,21 @@
 # Changelog
 
+## [Unreleased](https://github.com/josx/ra-data-feathers/tree/HEAD)
+
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.9.1...HEAD)
+
+**Merged pull requests:**
+
+- Fix type another props should be not required [\#162](https://github.com/josx/ra-data-feathers/pull/162) ([berviantoleo](https://github.com/berviantoleo))
+
+## [v2.9.1](https://github.com/josx/ra-data-feathers/tree/v2.9.1) (2021-06-04)
+
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.9.0...v2.9.1)
+
+**Closed issues:**
+
+- Typescript error [\#161](https://github.com/josx/ra-data-feathers/issues/161)
+
 ## [v2.9.0](https://github.com/josx/ra-data-feathers/tree/v2.9.0) (2021-06-02)
 
 [Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.8.1...v2.9.0)
