@@ -6,7 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "pretest": "npm run build",
-    "test": "npm run coverage",
+    "test": "npm run coverage && npm run test:type",
     "test:type": "tsd",
     "build": "cross-env NODE_ENV=production ./node_modules/.bin/babel ./src -d lib --ignore '*.spec.js' && tsc",
     "build:types": "tsc",
