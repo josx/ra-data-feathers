@@ -1,5 +1,5 @@
 import { restClient, authClient } from "../../lib";
-import { expectType } from 'tsd';
+import { expectType, expectError } from 'tsd';
 
 interface IRestClientResult {
   (type: any, resource: any, params: any): any
@@ -42,7 +42,7 @@ const configInvalid = {
   id: 1
 };
 
-expectType<IRestClientResult>(restClient(null, configInvalid));
+expectError(restClient(null, configInvalid));
 
 const allAuthOptions = {
   storageKey: 'token', // The key in localStorage used to store the authentication token
