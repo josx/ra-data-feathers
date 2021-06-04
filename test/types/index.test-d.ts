@@ -31,11 +31,18 @@ const configFull = {
 expectType<IRestClientResult>(restClient(null, configFull));
 
 // this will be ignored and use default value instead
-const configUnexpected = {
-  randomly: 1
+const configServices = {
+  randomly: { id: "ok" }
 };
 
-expectType<IRestClientResult>(restClient(null, configUnexpected));
+expectType<IRestClientResult>(restClient(null, configServices));
+
+// this will be false
+const configInvalid = {
+  id: 1
+};
+
+expectType<IRestClientResult>(restClient(null, configInvalid));
 
 const allAuthOptions = {
   storageKey: 'token', // The key in localStorage used to store the authentication token
