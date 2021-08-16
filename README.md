@@ -79,7 +79,7 @@ const options = {
 
 ```js
 const options = {
-  storageKey: 'token', // The key in localStorage used to store the authentication token
+  storageKey: 'feathers-jwt', // The key in localStorage used to store the authentication token
   authenticate: { // Options included in calls to Feathers client.authenticate
     strategy: 'local', // The authentication strategy Feathers should use
   },

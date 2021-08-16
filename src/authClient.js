@@ -21,7 +21,7 @@ export default (client, options = {}) => (type, params) => {
     redirectTo,
     logoutOnForbidden,
   } = Object.assign({}, {
-    storageKey: 'token',
+    storageKey: 'feathers-jwt',
     authenticate: { strategy: 'local' },
     permissionsKey: 'permissions',
     permissionsField: 'roles',
