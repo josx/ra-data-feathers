@@ -45,7 +45,7 @@ const configInvalid = {
 expectError(restClient(null, configInvalid));
 
 const allAuthOptions = {
-  storageKey: 'token', // The key in localStorage used to store the authentication token
+  storageKey: 'feathers-jwt', // The key in localStorage used to store the authentication token
   authenticate: { // Options included in calls to Feathers client.authenticate
     strategy: 'local', // The authentication strategy Feathers should use
   },
@@ -60,7 +60,7 @@ const allAuthOptions = {
 expectType<IAuthClientResult>(authClient(null, allAuthOptions));
 
 const someOptions = {
-  storageKey: 'token', // The key in localStorage used to store the authentication token
+  storageKey: 'feathers-jwt', // The key in localStorage used to store the authentication token
   authenticate: { // Options included in calls to Feathers client.authenticate
     strategy: 'local', // The authentication strategy Feathers should use
   },
