@@ -2,11 +2,28 @@
 
 ## [Unreleased](https://github.com/josx/ra-data-feathers/tree/HEAD)
 
-[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.9.1...HEAD)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.9.3...HEAD)
 
 **Merged pull requests:**
 
-- Fix type another props should be not required [\#162](https://github.com/josx/ra-data-feathers/pull/162) ([berviantoleo](https://github.com/berviantoleo))
+- Bump shelljs from 0.8.4 to 0.8.5 [\#170](https://github.com/josx/ra-data-feathers/pull/170) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Fixes default storageKey value. [\#165](https://github.com/josx/ra-data-feathers/pull/165) ([olosegres](https://github.com/olosegres))
+- Bump path-parse from 1.0.6 to 1.0.7 [\#164](https://github.com/josx/ra-data-feathers/pull/164) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v2.9.3](https://github.com/josx/ra-data-feathers/tree/v2.9.3) (2022-01-25)
+
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.9.2...v2.9.3)
+
+## [v2.9.2](https://github.com/josx/ra-data-feathers/tree/v2.9.2) (2022-01-25)
+
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.9.1...v2.9.2)
+
+**Closed issues:**
+
+- Example feathers client? [\#169](https://github.com/josx/ra-data-feathers/issues/169)
+- Authorization Error [\#167](https://github.com/josx/ra-data-feathers/issues/167)
+- Encrypting password from authProvider [\#166](https://github.com/josx/ra-data-feathers/issues/166)
+- File upload [\#163](https://github.com/josx/ra-data-feathers/issues/163)
 
 ## [v2.9.1](https://github.com/josx/ra-data-feathers/tree/v2.9.1) (2021-06-04)
 
@@ -15,6 +32,10 @@
 **Closed issues:**
 
 - Typescript error [\#161](https://github.com/josx/ra-data-feathers/issues/161)
+
+**Merged pull requests:**
+
+- Fix type another props should be not required [\#162](https://github.com/josx/ra-data-feathers/pull/162) ([berviantoleo](https://github.com/berviantoleo))
 
 ## [v2.9.0](https://github.com/josx/ra-data-feathers/tree/v2.9.0) (2021-06-02)
 
