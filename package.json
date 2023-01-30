@@ -46,7 +46,7 @@
   "homepage": "https://github.com/josx/ra-data-feathers#readme",
   "peerDependencies": {
     "@feathersjs/client": "^3.5.3 || ^4.3.0",
-    "react-admin": "^2.1.1"
+    "react-admin": "^4.7.2"
   },
   "dependencies": {
     "debug": "^3.0.0",
@@ -71,7 +71,7 @@
     "mocha": "^8.4.0",
     "nyc": "^15.1.0",
     "react": "^16.4.1",
-    "react-admin": "^2.1.1",
+    "react-admin": "^4.7.2",
     "react-dom": "^16.4.1",
     "shx": "^0.3.3",
     "sinon": "^11.1.1",
