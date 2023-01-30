@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:12.22
+      - image: circleci/node:14.21
     working_directory: ~/ra-data-feathers
     steps:
       - checkout
