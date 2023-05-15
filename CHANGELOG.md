@@ -2,13 +2,33 @@
 
 ## [Unreleased](https://github.com/josx/ra-data-feathers/tree/HEAD)
 
-[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.9.3...HEAD)
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.9.4...HEAD)
 
 **Merged pull requests:**
 
-- Bump shelljs from 0.8.4 to 0.8.5 [\#170](https://github.com/josx/ra-data-feathers/pull/170) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Fixes default storageKey value. [\#165](https://github.com/josx/ra-data-feathers/pull/165) ([olosegres](https://github.com/olosegres))
-- Bump path-parse from 1.0.6 to 1.0.7 [\#164](https://github.com/josx/ra-data-feathers/pull/164) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Support legacy reac admin [\#196](https://github.com/josx/ra-data-feathers/pull/196) ([josx](https://github.com/josx))
+- Bump node-fetch and react-admin [\#191](https://github.com/josx/ra-data-feathers/pull/191) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump minimist and mkdirp [\#190](https://github.com/josx/ra-data-feathers/pull/190) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ua-parser-js from 0.7.28 to 0.7.33 [\#187](https://github.com/josx/ra-data-feathers/pull/187) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump qs from 6.5.2 to 6.5.3 [\#186](https://github.com/josx/ra-data-feathers/pull/186) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump decode-uri-component from 0.2.0 to 0.2.2 [\#185](https://github.com/josx/ra-data-feathers/pull/185) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump async from 3.2.0 to 3.2.3 [\#183](https://github.com/josx/ra-data-feathers/pull/183) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump lodash-es from 4.17.14 to 4.17.21 [\#178](https://github.com/josx/ra-data-feathers/pull/178) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ajv from 6.10.0 to 6.12.6 [\#172](https://github.com/josx/ra-data-feathers/pull/172) ([dependabot[bot]](https://github.com/apps/dependabot))
+- fix: permissionsKey and permissionsField in authClient options types [\#171](https://github.com/josx/ra-data-feathers/pull/171) ([ucokfm](https://github.com/ucokfm))
+
+## [v2.9.4](https://github.com/josx/ra-data-feathers/tree/v2.9.4) (2023-05-15)
+
+[Full Changelog](https://github.com/josx/ra-data-feathers/compare/v2.9.3...v2.9.4)
+
+**Closed issues:**
+
+- Broken `peerDependencies` \(`react-admin` `v2.x`\) [\#184](https://github.com/josx/ra-data-feathers/issues/184)
+- `react-admin` `v4` support [\#182](https://github.com/josx/ra-data-feathers/issues/182)
+- How to add custom headers? [\#181](https://github.com/josx/ra-data-feathers/issues/181)
+- total count / `X-Total-Count` / partial pagination missing [\#180](https://github.com/josx/ra-data-feathers/issues/180)
+- Production build: `Uncaught (in promise) Error: Failed to execute 'fetch' on 'Window': Illegal invocation` [\#177](https://github.com/josx/ra-data-feathers/issues/177)
+- `createMany` unsupported [\#174](https://github.com/josx/ra-data-feathers/issues/174)
 
 ## [v2.9.3](https://github.com/josx/ra-data-feathers/tree/v2.9.3) (2022-01-25)
 
@@ -24,6 +44,12 @@
 - Authorization Error [\#167](https://github.com/josx/ra-data-feathers/issues/167)
 - Encrypting password from authProvider [\#166](https://github.com/josx/ra-data-feathers/issues/166)
 - File upload [\#163](https://github.com/josx/ra-data-feathers/issues/163)
+
+**Merged pull requests:**
+
+- Bump shelljs from 0.8.4 to 0.8.5 [\#170](https://github.com/josx/ra-data-feathers/pull/170) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Fixes default storageKey value. [\#165](https://github.com/josx/ra-data-feathers/pull/165) ([olosegres](https://github.com/olosegres))
+- Bump path-parse from 1.0.6 to 1.0.7 [\#164](https://github.com/josx/ra-data-feathers/pull/164) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v2.9.1](https://github.com/josx/ra-data-feathers/tree/v2.9.1) (2021-06-04)
 
