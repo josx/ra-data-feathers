@@ -1,11 +1,11 @@
 {
   "name": "ra-data-feathers",
-  "version": "2.9.4",
+  "version": "3.0.0",
   "description": "A feathers client for react-admin",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "engines": {
-      "node": "18.20.7"
+    "node": "18.20.7"
   },
   "scripts": {
     "pretest": "npm run build",
