@@ -1,6 +1,6 @@
 # ra-data-feathers
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-26-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-27-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Feathers data provider for [react-admin](https://github.com/marmelab/react-admin)
@@ -205,6 +205,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/nhkhanh"><img src="https://avatars0.githubusercontent.com/u/4928520?v=4?s=80" width="80px;" alt=""/><br /><sub><b>nhkhanh</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=nhkhanh" title="Code">💻</a> <a href="https://github.com/josx/ra-data-feathers/commits?author=nhkhanh" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/ucokfm"><img src="https://avatars.githubusercontent.com/u/1414833?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Ucok Freddy</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=ucokfm" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/olosegres/jsona"><img src="https://avatars.githubusercontent.com/u/3730589?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Sergei Solo</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=olosegres" title="Code">💻</a></td>
+    <td align="center"><a href="https://berviantoleo.my.id/"><img src="https://avatars.githubusercontent.com/u/15927349?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Bervianto Leo Pratama</b></sub></a><br /><a href="https://github.com/josx/ra-data-feathers/commits?author=berviantoleo" title="Code">💻</a></td>
   </tr>
 </table>
 
