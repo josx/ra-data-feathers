@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cimg/node:14.21
+      - image: cimg/node:18.20.7
     working_directory: ~/ra-data-feathers
     steps:
       - checkout
