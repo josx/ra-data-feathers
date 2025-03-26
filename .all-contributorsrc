@@ -249,6 +249,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "ucokfm",
+      "name": "Ucok Freddy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1414833?v=4",
+      "profile": "https://github.com/ucokfm",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
