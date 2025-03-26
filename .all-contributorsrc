@@ -6,7 +6,7 @@
   "files": [
     "README.md"
   ],
-  "imageSize": 80,
+  "imageSize": 40,
   "commit": true,
   "commitConvention": "none",
   "contributors": [
@@ -248,6 +248,42 @@
       "contributions": [
         "code",
         "doc"
+      ]
+    },
+    {
+      "login": "ucokfm",
+      "name": "Ucok Freddy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1414833?v=4",
+      "profile": "https://github.com/ucokfm",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "olosegres",
+      "name": "Sergei Solo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3730589?v=4",
+      "profile": "https://github.com/olosegres/jsona",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "berviantoleo",
+      "name": "Bervianto Leo Pratama",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15927349?v=4",
+      "profile": "https://berviantoleo.my.id/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "JPStrydom",
+      "name": "JP Strydom",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25905330?v=4",
+      "profile": "https://github.com/JPStrydom",
+      "contributions": [
+        "code"
       ]
     }
   ],
