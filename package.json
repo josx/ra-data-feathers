@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "engines": {
-    "node": "18.20.7"
+    "node": ">=18.20.7"
   },
   "scripts": {
     "pretest": "npm run build",
@@ -21,7 +21,7 @@
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish",
     "coverage": "nyc node_modules/mocha/bin/_mocha -- --require babel-register",
-    "mocha": "cross-env DEBUG=ra-data-feathers:* mocha  --require babel-register"
+    "mocha": "cross-env DEBUG=ra-data-feathers:* mocha --require babel-register"
   },
   "files": [
     "LICENSE",
